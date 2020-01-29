@@ -8,14 +8,17 @@
 
 #include <iostream>
 #include <cmath>
-
 using namespace std;
+using std::cout;
+using std::endl;
+using std::cin;
+
 int main()
 {
-	int i,d,l;
+	int i,d,r;
 	cout << "How tall would you like your diamond?" << endl;
-	cin >> "l";
-	//for(i=0;i<=l;i++)
+	cin >> r;
+	//for(i=0;i<=r;i++)
 	//{ }
 	return 0;
 
