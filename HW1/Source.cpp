@@ -12,7 +12,11 @@
 using namespace std;
 int main()
 {
-	cout << "Hello World" << endl;
+	int i,d,l;
+	cout << "How tall would you like your diamond?" << endl;
+	cin >> "l";
+	//for(i=0;i<=l;i++)
+	//{ }
 	return 0;
 
 }
