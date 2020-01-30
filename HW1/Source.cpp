@@ -15,22 +15,22 @@ using std::cin;
 
 int main()
 {
-	int i, d, r; // i is integer, d is diamond, r is rows
+	int i, d, r; //
 	cout << "How tall would you like your diamond?" << endl;
 	cin >> r;
 	for (i = 0; i <= r; i++)
 	{
-		for (d = 1; d <= r - 1; d++)
+		for (d = 1; d <= r - i; d++)
 			cout << " ";
-		for (d = 1; d = 2 * i - 1; d++)
+		for (d = 1; d <= 2 * i - 1; d++)
 			cout << "#";
 		cout << endl;
 	}
 	for(i=r-1;i>=1;i--)
 	{
-	for (i = r - 1; i >= 1; d++)
-		cout << "";
-	for (d = 1; d <= r - 1; i--)
+	for (d = 1; d <=r-i; d++)
+		cout << " ";
+	for (d = 1; d<=2*i - 1; d++)
 		cout << "#";
 		cout << endl;;
 
