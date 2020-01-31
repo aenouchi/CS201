@@ -28,9 +28,9 @@ int main()
 	}
 	for(i=r-1;i>=1;i--)
 	{
-	for (d = 1; d <=r-i; d++)
-		cout << " ";
-	for (d = 1; d<=2*i - 1; d++)
+		for (d = 1; d <=r-i; d++)
+			cout << " ";
+		for (d = 1; d<=2*i - 1; d++)
 		cout << "#";
 		cout << endl;;
 
