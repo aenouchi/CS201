@@ -15,8 +15,11 @@ using std::cout;
 using std::endl;
 using std::cin;
 
-
 int main()
-{
-	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
-}
+	{
+		double mile ;
+		cout << "Please input the miles to be converted" << endl;
+		cin >> mile;
+		cout << mile << " Miles to " << (mile * 1.609) << " kilometers" << endl;
+
+	}
