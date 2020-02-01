@@ -18,5 +18,11 @@ using std::cin;
 
 int main()
 {
+	int n;
 	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
+	cin >> n;
+	cout << n << endl;
+
+
+
 }
