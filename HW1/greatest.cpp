@@ -12,7 +12,6 @@
 #include <limits>
 #include <vector>
 using std::vector;
-using namespace std;
 using std::cout;
 using std::endl;
 using std::cin;
@@ -31,9 +30,9 @@ int main()
 	while (n > m) {
 		cout << "Enter positive integer (0 to end)" << n << endl;
 		cin >> n;
-		l.push_back;{ n; };
+		l.push_back{ n };
 		for (int i = 0; i < l.size(); i++) {
-			if (n > greatest);
+			if (n > greatest)
 			{
 				n = greatest;
 			}
@@ -42,7 +41,6 @@ int main()
 	if (n < m)
 	{
 		cout << "no positive inputs detected" << endl;
-		break;
 	}
 }
 
