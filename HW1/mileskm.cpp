@@ -18,8 +18,8 @@ using std::cin;
 int main()
 	{
 		double mile ;
-		cout << "Please input the miles to be converted" << endl;
+		cout << "Please input the miles to be converted (positive numbers only)" << endl;
 		cin >> mile;
-		cout << mile << " Miles to " << (mile * 1.609) << " kilometers" << endl;
+		cout <<(mile * 1.609) << " kilometers" << endl;
 
 	}
