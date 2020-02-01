@@ -27,7 +27,7 @@ int main()
 		cin >> n;
 
 	}
-	while (n <= m)
+	while (n < m)
 	{
 		cout << "no positive inputs detected" << endl;
 		break;
