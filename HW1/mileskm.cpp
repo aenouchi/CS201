@@ -17,13 +17,13 @@ using std::cin;
 
 int main()
 	{
-		double mile; 
+		double mile; // Used double due to the rough converion between mile and kilometer
 			cout << "Input the miles to be converted to km (positive numbers only)" << endl;
 			cin >> mile;
 			if (mile >= 0) {
-				cout << (mile * 1.609) << " kilometers" << endl;
+				cout << (mile * 1.609) << " kilometers" << endl; // Converts
 			}
-			else if (mile < 0)
+			else if (mile < 0) //Error if negative number is inputted
 				{
 				cout << "I said POSITIVE numbers" << endl;
 			}

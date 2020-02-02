@@ -20,17 +20,17 @@ int main()
 	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
 	cin >> num;
 
-	while (num > 0)
+	while (num > 0) // As long as the inputed number is less than 0.
 	{
-		cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
+		cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl; //message is repeated
 		cin >> num;
 
-		if (counter == 0)
+		if (counter == 0) // If counter equals to zero the greatest number is the number displayed
 		{
 			greatest = num;
 
 		}
-		else
+		else // If number is bigger than current greatest, it will be replaced
 		{
 			if (num > greatest)
 				greatest = num;
@@ -39,7 +39,7 @@ int main()
 
 		cout << "The greatest number entered " << greatest << endl;
 	}
-	if (num < 0) {
+	if (num < 0) { //Error message
 		cout << "no positive inputs detected" << endl;
 	}
 }

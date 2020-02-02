@@ -18,5 +18,11 @@
     <ClCompile Include="greatest2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mileskm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diamond.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
