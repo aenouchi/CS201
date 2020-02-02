@@ -7,30 +7,35 @@
 */
 
 #include <iostream>
+
 using namespace std;
-#include <cmath>
-#include <iomanip>
-#include <limits>
-#include <vector>
-using std::vector;
-using std::cout;
-using std::endl;
-using std::cin;
+
 
 int main()
 {
 	int num = 0;
 	int greatest;
 	int counter = 0;
-
-	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
 	
-	while (num != 0)
+	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
+	cin >> num;
+
+	while (num > 0)
 	{
 		cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
 		cin >> num;
 		
 		if (counter == 0)
-	}
+		{
+			greatest = num;
 
+		}
+		else
+		{
+			if (num > greatest)
+				greatest = num;
+		}
+		counter++;
+	}
+	cout << "The greatest number entered " << num << endl;
 }

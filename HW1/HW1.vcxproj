@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="greatest.cpp" />
     <ClCompile Include="greatest2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
