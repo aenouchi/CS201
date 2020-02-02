@@ -24,23 +24,27 @@ int main()
 	int m = 0;
 	vector <int> l;
 	int greatest = 0;
-	
+
 	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
 	cin >> n;
 	while (n > m) {
-		cout << "Enter positive integer (0 to end)" << n << endl;
+		cout << "Enter positive integer (0 to end)" << endl;
 		cin >> n;
-		l.push_back(n);
-		for (int i = 0; i < l.size(); i++) {
-			if (n > greatest)
-			{
-				n = greatest;
+		//l.push_back(n);
+		while (n > 0) {
+
+			for (int i = 0; i < l.size(); i++) {
+				if (n > greatest)
+				{
+					n = greatest;
+				}
+
+				cout << n << endl;
+
 			}
-			}
-	}
-	if (n < m)
-	{
-		cout << "no positive inputs detected" << endl;
+		}
+		if (n < m) {
+			cout << "no positive inputs detected" << endl;
+		}
 	}
 }
-
