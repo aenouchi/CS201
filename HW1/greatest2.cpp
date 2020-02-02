@@ -37,5 +37,5 @@ int main()
 		}
 		counter++;
 	}
-	cout << "The greatest number entered " << num << endl;
+	cout << "The greatest number entered " << greatest << endl;
 }
