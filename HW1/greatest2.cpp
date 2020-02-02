@@ -20,7 +20,7 @@ int main()
 	cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl;
 	cin >> num;
 
-	while (num > 0) // As long as the inputed number is less than 0.
+	while (num > 0) // As long as the inputed number is greater than 0.
 	{
 		cout << "Enter sequence of positive integers, ending with zero. I will print the greatest positive integer." << endl; //message is repeated
 		cin >> num;
