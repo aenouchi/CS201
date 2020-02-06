@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mileskm.cpp">
+    <ClCompile Include="names.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
