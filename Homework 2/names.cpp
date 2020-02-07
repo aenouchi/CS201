@@ -11,11 +11,13 @@
 #include <string>
 #include <algorithm>
 
-using namespace std;
+
 using std::cout;
 using std::endl;
 using std::cin;
 
+
+void InputNames(std::vector<std::string>& names);
 int main(int argc, char** argv)
 {
 	std::vector<std::string> names;
