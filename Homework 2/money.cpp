@@ -1,4 +1,5 @@
 /**
+*money.cpp
 *Homework 1
 *Aaron Nouchi
 *CS 201
@@ -14,7 +15,7 @@ using std::cin;
 
 int main()
 {
-	int pennies;
+	int pennies = 1;
 	int nickels = pennies / 5;
 	int dimes = pennies / 10;
 	int quarters = pennies / 25;
@@ -23,7 +24,8 @@ int main()
 
 	cout << "How many pennies do you have?" << endl;
 	cin >> pennies;
-	
+	pennies = pennies % 100;
+	cout << pennies << "cents " << endl;
 
 }
 

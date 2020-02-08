@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="names.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="money.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="rice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

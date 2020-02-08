@@ -1,4 +1,5 @@
 /**
+*name.cpp
 *Homework 1
 *Aaron Nouchi
 *CS 201
@@ -18,6 +19,8 @@ using std::cin;
 
 
 void InputNames(std::vector<std::string>& names);
+
+
 int main(int argc, char** argv)
 {
 	std::vector<std::string> names;
