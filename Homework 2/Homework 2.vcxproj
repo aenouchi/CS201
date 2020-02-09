@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="money.cpp" />
     <ClCompile Include="money2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

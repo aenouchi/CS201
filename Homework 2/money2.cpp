@@ -16,12 +16,12 @@ void print_money(
 )
 {
 	int nickels = pennies / 5;
-	int nickels = pennies % 5;
+	nickels = pennies % 5;
 
 	if (nickels == 1)
 		cout << nickels << " nickel " << endl;
 	else if (nickels > 1)
-		cout << nickels << "nickels" << endl;
+		cout << nickels << " nickels " << endl;
 
 	if (pennies == 1)
 		cout << pennies << " penny " << endl;
@@ -40,4 +40,7 @@ void print_money(
 
 
 int main(){
+
+	for (int pennies = 1; pennies <= 5; pennies++)
+		print_money(pennies);
 }
