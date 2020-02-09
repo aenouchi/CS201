@@ -15,8 +15,22 @@ void print_money(
 	int pennies
 )
 {
-	int pennies = 1;
 	int nickels = pennies / 5;
+	int nickels = pennies % 5;
+
+	if (nickels == 1)
+		cout << nickels << " nickel " << endl;
+	else if (nickels > 1)
+		cout << nickels << "nickels" << endl;
+
+	if (pennies == 1)
+		cout << pennies << " penny " << endl;
+	if (pennies > 1)
+		cout << pennies << " pennies " << endl;
+	
+	
+	
+	
 	int dimes = pennies / 10;
 	int quarters = pennies / 25;
 	int halfdollars = pennies / 50;
