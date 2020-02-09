@@ -41,6 +41,6 @@ void print_money(
 
 int main(){
 
-	for (int cents = 1; cents <= 5; cents++)
+	for (int cents = 1; cents <= 10; cents++)
 		print_money(cents);
 }
