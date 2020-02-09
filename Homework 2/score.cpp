@@ -8,8 +8,15 @@
 */
 
 #include <iostream>
+#include <string>
+#include <vector>
+
+using std::cout;
+using std::endl;
+using std::cin;
 
 int main()
 {
-
+	std::vector<std::string> peeps; // Vectors are established
+	std::vector<int> scores;
 }
