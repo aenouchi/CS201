@@ -26,19 +26,19 @@ int main()
 
 	cout << "How many pennies do you have?" << endl;
 	cin >> pennies;
-	
+
 	cout << "How many nickels do you have?" << endl;
 	cin >> nickels;
-	
+
 	cout << "How many dimes do you have?" << endl;
 	cin >> dimes;
-	
+
 	cout << "How many quarters do you have?" << endl;
 	cin >> quarters;
-	
+
 	cout << "How many half dollars do you have?" << endl;
 	cin >> halfdollars;
-	
+
 	cout << "How many dollars do you have?" << endl;
 	cin >> dollars;
 
@@ -72,19 +72,14 @@ int main()
 	else
 		cout << "You have 1 dollar" << endl;
 
-	
+
 	total = pennies + (nickels * 5) + (dimes * 10) + (quarters * 25) + (halfdollars * 50) + (dollars * 100);
 
 	if (total < 100) {
 		cout << " You have " << total << " cents" << endl;
 	}
 
-
-
-
-
-
-
-
-
+	else (total /= 100); {
+		cout << " You have $" << total << endl;
+	}
 }
