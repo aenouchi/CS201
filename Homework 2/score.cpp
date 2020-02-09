@@ -20,9 +20,21 @@ int main()
 	std::vector<std::string> peeps; // Vectors are established
 	std::vector<int> scores;
 
-	std::string x;
+	std::string x; //establishing variables
 	int y;
 	bool flag = false;
 
 	while (flag == false)
+	{
+		cout << "Input name and score, type end to stop " << endl;
+		cout << "name" << endl;
+		cin >> x;
+		if (x == "end")
+			break;
+
+		for (int i = 0; i < peeps.size(); i++) 
+		{
+			if
+		}
+	}
 }
