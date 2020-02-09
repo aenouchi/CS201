@@ -43,9 +43,34 @@ int main()
 	cin >> dollars;
 
 	if (pennies != 1)
-		cout << " You have " << pennies << " pennies" << endl;
+		cout << "You have " << pennies << " pennies" << endl;
 	else
 		cout << "You have 1 penny" << endl;
+
+	if (nickels != 1)
+		cout << "You have " << nickels << " nickels" << endl;
+	else
+		cout << "You have 1 nickel" << endl;
+
+	if (dimes != 1)
+		cout << "You have " << dimes << " dimes" << endl;
+	else
+		cout << "You have 1 dime" << endl;
+
+	if (quarters != 1)
+		cout << "You have " << quarters << " quarters" << endl;
+	else
+		cout << "You have 1 quarter" << endl;
+
+	if (halfdollars != 1)
+		cout << "You have " << halfdollars << " half dollars" << endl;
+	else
+		cout << "You have 1 half dollar" << endl;
+
+	if (dollars != 1)
+		cout << "You have " << dollars << " dollars" << endl;
+	else
+		cout << "You have 1 dollar" << endl;
 
 
 
