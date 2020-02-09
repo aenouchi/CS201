@@ -72,6 +72,13 @@ int main()
 	else
 		cout << "You have 1 dollar" << endl;
 
+	
+	total = pennies + (nickels * 5) + (dimes * 10) + (quarters * 25) + (halfdollars * 50) + (dollars * 100);
+
+	if (total < 100) {
+		cout << " You have " << total << " cents" << endl;
+	}
+
 
 
 
