@@ -1,5 +1,5 @@
 /**
-*name.cpp
+*score.cpp
 *Homework 1
 *Aaron Nouchi
 *CS 201
