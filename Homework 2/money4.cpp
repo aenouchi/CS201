@@ -11,17 +11,21 @@
 
 using std::cout;
 using std::endl;
+using std::cin;
 
 int main()
 {
-	double penny = 0;
-	double nickel = 0;
-	double dime = 0;
-	double quarter = 0;
-	double halfdollar = 0;
-	double dollar = 0;
+	double pennies = 0;
+	double nickels = 0;
+	double dimes = 0;
+	double quarters = 0;
+	double halfdollars = 0;
+	double dollars = 0;
 
 	double total = 0;
+
+	cout << "How many pennies do you have?" << endl;
+	cin >> pennies;
 
 
 }
