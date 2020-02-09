@@ -16,7 +16,7 @@ void print_money(
 )
 {
 	int nickels = pennies / 5;
-	nickels = pennies % 5;
+	pennies = pennies % 5;
 
 	if (nickels == 1)
 		cout << nickels << " nickel " << endl;
@@ -41,6 +41,6 @@ void print_money(
 
 int main(){
 
-	for (int pennies = 1; pennies <= 5; pennies++)
-		print_money(pennies);
+	for (int cents = 1; cents <= 5; cents++)
+		print_money(cents);
 }
