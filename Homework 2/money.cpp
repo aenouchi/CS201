@@ -24,8 +24,26 @@ int main()
 
 	cout << "How many pennies do you have?" << endl;
 	cin >> pennies;
-	pennies = pennies % 100;
-	cout << pennies << "cents " << endl;
+	pennies = pennies % 1;
+	
+	cout << "How many nickels do you have?" << endl;
+	cin >> nickels;
+	nickels = pennies % 5;
+	
+	cout << "How many dimes do you have?" << endl;
+	cin >> dimes;
+	dimes = pennies % 10;
+
+	cout << "How many quarters do you have?" << endl;
+	cin >> quarters;
+	quarters = pennies % 25;
+
+	cout << "How many halfdollars do you have?" << endl;
+	cin >> halfdollars;
+	halfdollars = pennies % 50;
+
+
+	
 
 }
 
