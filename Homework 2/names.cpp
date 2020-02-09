@@ -38,6 +38,8 @@ bool doesNameExist(const std::string& nametoFind, const std::vector<std::string>
 	return false;
 }
 
+void printNames(const std::vector<std::string> & names)
+
 
 
 int main(int argc, char** argv)
