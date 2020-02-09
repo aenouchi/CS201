@@ -19,4 +19,10 @@ int main()
 {
 	std::vector<std::string> peeps; // Vectors are established
 	std::vector<int> scores;
+
+	std::string x;
+	int y;
+	bool flag = false;
+
+	while (flag == false)
 }
