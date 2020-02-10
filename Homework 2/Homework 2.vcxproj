@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="names.cpp" />
     <ClCompile Include="score.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

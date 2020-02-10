@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="names.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="score.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

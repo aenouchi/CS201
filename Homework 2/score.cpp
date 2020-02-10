@@ -36,8 +36,19 @@ int main()
 		{
 			if (x == people[i]) // error message
 			{
-
+				cout << "Error: Name is already in use";
+					flag = true;
 			}
+		}
+		if (flag == false)
+		{
+			cout << "score\n" << endl; // collecting score input
+			cin >> y;
+
+			people.push_back(x);
+			scores.push_back(y);
+
+			cout << "\n\n";
 		}
 	}
 }
