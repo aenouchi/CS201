@@ -51,4 +51,8 @@ int main()
 			cout << "\n\n";
 		}
 	}
+	for (int i = 0; i < people.size(); i++)
+	{
+		cout << people[i] << " - " << scores[i] << "\n";// Displays ending scores and names
+	}
 }
