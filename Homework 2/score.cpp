@@ -17,7 +17,7 @@ using std::cin;
 
 int main()
 {
-	std::vector<std::string> peeps; // Vectors are established
+	std::vector<std::string> people; // Vectors are established
 	std::vector<int> scores;
 
 	std::string x; //establishing variables
@@ -32,9 +32,12 @@ int main()
 		if (x == "end")
 			break;
 
-		for (int i = 0; i < peeps.size(); i++) 
+		for (int i = 0; i < people.size(); i++) 
 		{
-			if
+			if (x == people[i]) // error message
+			{
+
+			}
 		}
 	}
 }
