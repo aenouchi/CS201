@@ -41,6 +41,12 @@ int main()
 	cin >> x;
 	cout << "\n";
 
+	if (x < 0)
+	{
+		cout << " Error: Positive integers only." << endl;
+
+	}
+
 	collatz(x);
 	cout << "\n\n";
 }
