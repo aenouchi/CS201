@@ -32,5 +32,9 @@ void collatz(int x)
 			x = x * 3 + 1;
 		}
 	}
+}
+
+int main()
+{
 
 }
