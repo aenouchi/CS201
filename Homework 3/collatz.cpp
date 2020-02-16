@@ -41,4 +41,6 @@ int main()
 	cin >> x;
 	cout << "\n";
 
-	if (x < 0)
+	collatz(x);
+	cout << "\n\n";
+}
