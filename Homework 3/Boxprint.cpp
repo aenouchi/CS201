@@ -14,7 +14,10 @@ using std::cin;
 int main()
 {
 	int x;
-	std::string word;
+	std::string message;
 
-
+	cout << "Enter message";
+	cin >> message;
+	cout << "Enter desired box size";
+	cin >> x;
 }
