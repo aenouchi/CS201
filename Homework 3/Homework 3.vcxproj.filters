@@ -18,5 +18,13 @@
     <ClCompile Include="Boxer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Boxprint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Boxer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
