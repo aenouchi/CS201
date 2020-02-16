@@ -44,7 +44,7 @@ int main()
 	if (x < 0)
 	{
 		cout << " Error: Positive integers only." << endl;
-
+		main();
 	}
 
 	collatz(x);
