@@ -36,5 +36,9 @@ void collatz(int x)
 
 int main()
 {
+	int x;
+	cout << " Enter input to be used in the Collatz function:";
+	cin >> x;
+	cout << "\n";
 
-}
+	if (x < 0)
