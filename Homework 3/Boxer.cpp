@@ -38,7 +38,7 @@ void box(std::string message, int x)
 	}
 	for (int i = 0; i < x; i++)
 	{
-	cout << print;
+		cout << print;
 	}
 	cout << "\n";
 
@@ -68,3 +68,13 @@ void box(std::string message, int x)
 		cout << print;
 	}
 	cout << "\n";
+
+	for (int i = 0; i < x; i++)
+	{
+		for (int u = 0, u < width; u++)
+		{
+			cout << print;
+		}
+		cout << "\n";
+	}
+}
