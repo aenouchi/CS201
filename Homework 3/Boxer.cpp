@@ -13,6 +13,7 @@ using std::cin;
 
 #include "Boxer.hpp"
 
+void box (std::string word, int x)
 int main()
 
 {}
