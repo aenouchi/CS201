@@ -20,4 +20,12 @@ int main()
 	cin >> message;
 	cout << "Enter desired box size";
 	cin >> x;
+
+	if (x < 0)
+	{
+		cout << "Error: Positive integers only";
+
+	}
+	else
+	box(message, x);
 }
