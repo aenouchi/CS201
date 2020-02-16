@@ -13,7 +13,7 @@
 #include <string>
 #include <iostream>
 
-void box(std::string word, int x); //Establish message for box
+void box(std::string message, int x); //Establish message for box
 
 #endif
 

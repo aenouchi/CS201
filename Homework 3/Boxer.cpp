@@ -13,14 +13,14 @@ using std::cin;
 
 #include "Boxer.hpp"
 
-void box(std::string word, int x)
+void box(std::string message, int x)
 {
 	int width;
-	width = word.size() + 2 + (2 * x);
+	width = message.size() + 2 + (2 * x);
 
 	char print = '*';
 
-	for (int i = 0; i < x; i++) //For top portion of box
+	for (int i = 0; i < x; i++) //For top row of box
 	{
 		for (int u = 0; u < width; u++)
 		{
@@ -28,9 +28,21 @@ void box(std::string word, int x)
 		}
 		cout << "\n";
 	}
+	for (int i = 0; i < x; i++) //First half of mid rows
+	{
+		cout << print;
+	}
+	for (int i = 0; i < width - (2 * x); i++)
+	{
+		cout << " ";
+	}
+	for (int i = 0; i < x; i++)
+	{
+	cout << print;
+	}
+	cout << "\n";
 
-
-}
-int main()
-
-{}
+	for (int i = 0; i < x; i++) // For second mid portion
+	{
+		cout << print;
+	}
