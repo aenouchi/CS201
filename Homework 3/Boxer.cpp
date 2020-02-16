@@ -13,7 +13,13 @@ using std::cin;
 
 #include "Boxer.hpp"
 
-void box (std::string word, int x)
+void box(std::string word, int x)
+{
+	int width;
+	width = word.size() + 2 + (2 * x);
+
+	char print = '*';
+}
 int main()
 
 {}
