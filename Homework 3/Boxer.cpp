@@ -19,6 +19,17 @@ void box(std::string word, int x)
 	width = word.size() + 2 + (2 * x);
 
 	char print = '*';
+
+	for (int i = 0; i < x; i++) //For top portion of box
+	{
+		for (int u = 0; u < width; u++)
+		{
+			cout << print;
+		}
+		cout << "\n";
+	}
+
+
 }
 int main()
 
