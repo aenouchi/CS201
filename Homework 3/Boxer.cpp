@@ -53,4 +53,18 @@ void box(std::string message, int x)
 	{
 		cout << print;
 	}
-	cout << print;
+	cout << "\n";
+
+	for (int i = 0; i < x; i++) //For final portion of mid
+	{
+		cout << print;
+	}
+	for (int i = 0; i < width - (2 * x); i++)
+	{
+		cout << " ";
+	}
+	for (int i = 0; i < x; i++)
+	{
+		cout << print;
+	}
+	cout << "\n";
