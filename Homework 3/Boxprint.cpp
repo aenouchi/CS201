@@ -16,9 +16,9 @@ int main()
 	int x;
 	std::string message;
 
-	cout << "Enter message";
+	cout << "Enter message:";
 	cin >> message;
-	cout << "Enter desired box size";
+	cout << "Enter desired box size:";
 	cin >> x;
 
 	if (x < 0)

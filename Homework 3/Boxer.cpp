@@ -69,9 +69,9 @@ void box(std::string message, int x)
 	}
 	cout << "\n";
 
-	for (int i = 0; i < x; i++)
+	for (int i = 0; i < x; i++) //For bottom row
 	{
-		for (int u = 0, u < width; u++)
+		for (int u = 0; u < width; u++)
 		{
 			cout << print;
 		}
