@@ -34,4 +34,11 @@ int main()
 	double b;
 	double c;
 
+	cout << "The quadratic equation is (-b +- SQUARE ROOT (b^2 -4ac))/2a" << endl;
+	cout << "For your quadratic equation, enter an 'a' value" << endl;
+	cin >> a;
+	cout << "For your quadratic equation, enter an 'b' value" << endl;
+	cin >> b;
+	cout << "For your quadratic equation, enter an 'c' value" << endl;
+	cin >> c;
 }
