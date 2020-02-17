@@ -17,6 +17,11 @@ double quadpoint(int a, int b, int c)
 {
 	double squareroot;
 	squareroot = (b * b) - (4 * a * c);
+	if (squareroot < 0)
+		return 1.234568;
+	else
+		squareroot = sqrt(squareroot);
+
 
 }
 
