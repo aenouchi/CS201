@@ -18,7 +18,7 @@ double quadplus(int a, int b, int c) // Squareroot function +
 	double squareroot;
 	squareroot = (b * b) + (4 * a * c);
 	if (squareroot < 0)
-		return 1.234568;
+		return 1.234568; //error #
 	else
 		squareroot = sqrt(squareroot);
 
@@ -33,7 +33,7 @@ double quadminus(int a, int b, int c) // Squareroot function -
 	double squareroot;
 	squareroot = (b * b) - (4 * a * c);
 	if (squareroot < 0)
-		return 1.234568;
+		return 1.234568; // Error #
 	else
 		squareroot = sqrt(squareroot);
 
@@ -56,4 +56,10 @@ int main()
 	cin >> b;
 	cout << "For your quadratic equation, enter an 'c' value" << endl;
 	cin >> c;
+
+	if (quadplus(a, b, c) == 1.234568 || quadminus(a, b, c) == 1.234568)
+	{
+		cout << "Error: Number will not exist" << endl;
+	}
+
 }
