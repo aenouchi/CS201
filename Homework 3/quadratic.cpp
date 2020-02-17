@@ -13,7 +13,22 @@ using std::cout;
 using std::endl;
 using std::cin;
 
-double quadpoint(int a, int b, int c)
+double quadplus(int a, int b, int c) // Squareroot function +
+{
+	double squareroot;
+	squareroot = (b * b) + (4 * a * c);
+	if (squareroot < 0)
+		return 1.234568;
+	else
+		squareroot = sqrt(squareroot);
+
+	double answer;
+	answer = -b + squareroot;
+	answer = answer / (2 * a);
+	return answer;
+}
+
+double quadminus(int a, int b, int c) // Squareroot function -
 {
 	double squareroot;
 	squareroot = (b * b) - (4 * a * c);
