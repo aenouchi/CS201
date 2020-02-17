@@ -8,6 +8,16 @@
 */
 
 #include <iostream>
+#include <math.h>
 using std::cout;
 using std::endl;
 using std::cin;
+
+double quadpoint(int a, int b, int c)
+{
+	double squareroot;
+	squareroot = (b * b) - (4 * a * c);
+
+}
+
+int main 
