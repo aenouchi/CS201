@@ -28,4 +28,10 @@ double quadpoint(int a, int b, int c)
 	return answer;
 }
 
-int main 
+int main()
+{
+	double a;
+	double b;
+	double c;
+
+}
