@@ -61,5 +61,9 @@ int main()
 	{
 		cout << "Error: Number will not exist" << endl;
 	}
-
+	else if (quadplus(a, b, c) != quadminus(a, b, c))
+	{
+		cout << "The root of the quadratic equation are: \n";
+		cout << quadplus(a, b, c) << ", " << quadminus(a, b, c);
+	}
 }
