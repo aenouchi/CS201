@@ -22,7 +22,10 @@ double quadpoint(int a, int b, int c)
 	else
 		squareroot = sqrt(squareroot);
 
-
+	double answer;
+	answer = -b + squareroot;
+	answer = answer / (2 * a);
+	return answer;
 }
 
 int main 
