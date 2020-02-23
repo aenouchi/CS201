@@ -8,6 +8,7 @@
 */
 #include <iostream>
 #include <sstream>
+#include <vector>
 using std::cout;
 using std::endl;
 using std::string;
@@ -36,4 +37,19 @@ bool ReadLine(string& str)
 		return true;
 
 	return false;
+}
+
+unsigned stringToTokenWS(std::vector <std::string>& tokens)
+{
+	int tt = 0;
+	for (string s : tokens)
+	{
+		std::istringstream v(s);
+		int x;
+
+		v >> x;
+		tt + digit(x);
+		continue;
+	}
+	return tt;
 }
