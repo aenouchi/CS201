@@ -32,4 +32,8 @@ bool ReadLine(string& str)
 {
 	std::getline(std::cin, str);
 
+	if (str != "")
+		return true;
+
+	return false;
 }
