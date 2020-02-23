@@ -12,10 +12,16 @@
 
 using std::vector;
 using std::cout;
+using std::endl;
 
 
 int main()
 {
-	vector <std::string> mv = { "HelloWorld","Sonic1991", $$$$,"012345689" };
+	vector <std::string> mv = { "HelloWorld","Sonic1991", "$$$$","012345689" };
 	
+	cout << "Testing ReadLine():"<< endl;
+	for (std::string x : mv)
+	{
+		ReadLine(x);
+	}
 }
