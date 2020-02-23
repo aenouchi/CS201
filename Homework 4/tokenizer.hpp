@@ -14,3 +14,5 @@
 
 int digit(int x);
 bool ReadLine(std::string& str);
+unsigned stringToTokenWS(std::vector <std::string>& tokens);
+void analyzeTokens(const std::vector <std::string>& tokens);
