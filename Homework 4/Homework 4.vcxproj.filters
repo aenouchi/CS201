@@ -21,21 +21,9 @@
     <ClCompile Include="tokenizertest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="database.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="crud.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bulls-and-cows.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tokenizer.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="database.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
