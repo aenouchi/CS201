@@ -13,3 +13,4 @@
 #include <sstream> //provides string stream classes
 
 int digit(int x);
+bool ReadLine(std::string& str);
