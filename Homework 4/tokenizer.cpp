@@ -7,8 +7,11 @@
 *February 22,2020
 */
 #include <iostream>
+#include <sstream>
 using std::cout;
 using std::endl;
+using std::string;
+using std::cin;
 
 int digit(int x)
 {
@@ -23,4 +26,10 @@ int digit(int x)
 			break;
 	}
 	return digit;
+}
+
+bool ReadLine(string& str)
+{
+	std::getline(std::cin, str);
+
 }
