@@ -17,6 +17,8 @@ using std::endl;
 
 int main()
 {
+	cout << "Please type in some text. When you are done, type end" << endl;
+
 	vector <std::string> mv = { "HelloWorld","Sonic1991", "$$$$","012345689" };
 	
 	cout << "Testing ReadLine():\n";
