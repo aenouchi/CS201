@@ -19,14 +19,18 @@ int main()
 {
 	vector <std::string> mv = { "HelloWorld","Sonic1991", "$$$$","012345689" };
 	
-	cout << "Testing ReadLine():"<< endl;
+	cout << "Testing ReadLine():\n";
 	for (std::string x : mv)
 	{
 		ReadLine(x);
+		cout << "\n";
 	}
-	cout << "Testing stringToTokenWS():" << endl;
-	stringToTokenWS(mv);
+	cout << "\n\n\n\n";
 
-	cout << "Testing analyzeTokens():" << endl;
+	cout << "Testing stringToTokenWS():\n";
+	stringToTokenWS(mv);
+	cout << "\n\n\n\n";
+
+	cout << "Testing analyzeTokens(): \n";
 	analyzeTokens(mv);
 }
