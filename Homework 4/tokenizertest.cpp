@@ -24,4 +24,9 @@ int main()
 	{
 		ReadLine(x);
 	}
+	cout << "Testing stringToTokenWS():" << endl;
+	stringToTokenWS(mv);
+
+	cout << "Testing analyzeTokens():" << endl;
+	analyzeTokens(mv);
 }
