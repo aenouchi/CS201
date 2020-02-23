@@ -13,6 +13,7 @@ using std::cout;
 using std::endl;
 using std::string;
 using std::cin;
+using std::vector;
 
 int digit(int x)
 {
@@ -53,4 +54,18 @@ unsigned stringToTokenWS(std::vector <std::string>& tokens)
 	}
 	return tt;
 }
- v
+void analyzeTokens(const vector <string>& tokens)
+{
+	std::string type;
+
+	for (std::string s : tokens)
+	{
+		if (s == "")
+			type = "white space";
+		else if (std::istringstream(s))
+			type = "integer";
+		else
+			type = "string";
+		cout << "\"" << s << "\" - " << type << endl;
+	}
+ }
