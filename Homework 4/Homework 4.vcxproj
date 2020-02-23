@@ -138,7 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="bulls-and-cows.cpp" />
+    <ClCompile Include="crud.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="tokenizer.cpp" />
+    <ClCompile Include="tokenizertest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="database.hpp" />
+    <ClInclude Include="tokenizer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
