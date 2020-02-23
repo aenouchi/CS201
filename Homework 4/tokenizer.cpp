@@ -30,7 +30,7 @@ int digit(int x)
 	return digit;
 }
 
-bool ReadLine(string& str)
+bool ReadLine(std::string& str)
 {
 	std::getline(std::cin, str);
 
@@ -54,14 +54,14 @@ unsigned stringToTokenWS(std::vector <std::string>& tokens)
 	}
 	return tt;
 }
-void analyzeTokens(const vector <string>& tokens)
+void analyzeTokens(const std::vector <std::string>& tokens)
 {
 	std::string type;
 
 	for (std::string s : tokens)
 	{
 		if (s == "")
-			type = "white space";
+			type = "whitespace";
 		else if (std::istringstream(s))
 			type = "integer";
 		else
