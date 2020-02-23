@@ -12,8 +12,4 @@
 #include <vector>
 #include <sstream> //provides string stream classes
 
-
-
-int main()
-{
-}
+int digit(int x);
