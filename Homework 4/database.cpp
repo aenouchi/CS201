@@ -46,3 +46,12 @@ void read(std::string g)
 		cout << "Error: No input found.";
 	}
 }
+
+void read(int g)
+{
+	if (g > ref.size() || g < 0)
+	{
+		cout << "Error: slots do not exist in given range";
+	}
+
+}
