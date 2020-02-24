@@ -8,6 +8,8 @@
 */
 #include <iostream>
 #include "database.hpp"
+using std::cout;
+using std::endl;
 
 void create(std::string nn, std::string nc)
 {
@@ -17,3 +19,16 @@ void create(std::string nn, std::string nc)
 
 }
 
+void read(std::string g)
+{
+	bool flag = false;
+	for (int i = 0; i < name.size(); i++)
+	{
+		if (name[i] == g)
+		{
+			flag = true;
+			cout << "Name: " << name[i] << name[i] << "\nFavorite Color: " << color[i] << "\nSlot" << i;
+		}
+	}
+
+}
