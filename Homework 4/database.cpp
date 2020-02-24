@@ -67,3 +67,13 @@ void read(int g)
 		cout << "Error: No input found.";
 	}
 }
+
+void update(int x, std::string n, std::string c)
+{
+	if (x > ref.size() || x < 0)
+	{
+		cout << "Error: slots do not exist in given range";
+	}
+
+	}
+}
