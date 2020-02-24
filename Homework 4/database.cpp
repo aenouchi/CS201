@@ -7,7 +7,12 @@
 *February 22,2020
 */
 #include <iostream>
+#include "database.hpp"
 
-int main()
+void create(std::string nn, std::string nc)
 {
+	name.push_back(nn);
+	color.push_back(nc);
+
 }
+
