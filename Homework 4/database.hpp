@@ -11,3 +11,7 @@
 #include <vector>
 
 #pragma once
+
+std::vector <std::string> name;
+std::vector <std::string> color;
+std::vector <int> ref;
