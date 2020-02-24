@@ -13,6 +13,7 @@ void create(std::string nn, std::string nc)
 {
 	name.push_back(nn);
 	color.push_back(nc);
+	ref.push_back(ref.size() + 1);
 
 }
 
