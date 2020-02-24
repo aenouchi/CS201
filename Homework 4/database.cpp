@@ -41,4 +41,8 @@ void read(std::string g)
 			}
 		}
 	}
+	if (flag == false)
+	{
+		cout << "Error: No input found.";
+	}
 }
