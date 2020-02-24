@@ -7,7 +7,7 @@
 *February 22,2020
 */
 #include <iostream>
+#include <string>
+#include <vector>
 
-int main()
-{
-}
+#pragma once

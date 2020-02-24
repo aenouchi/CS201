@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="database.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="crud.cpp" />
+    <ClCompile Include="database.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{01E0393D-3106-47C2-8D09-CCD67F923C4D}</ProjectGuid>
@@ -137,13 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="tokenizer.cpp" />
-    <ClCompile Include="tokenizertest.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="tokenizer.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
