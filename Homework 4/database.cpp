@@ -53,5 +53,13 @@ void read(int g)
 	{
 		cout << "Error: slots do not exist in given range";
 	}
-
+	bool flag = false;
+	for (int i = 0; i < ref.size(); i++)
+	{
+		if (ref[i] == g)
+		{
+			flag = true;
+			cout << "Name: " << name[i] << "\nFavorite Color: " << color[i] << "\nSlot: " << i;
+		}
+	}
 }
