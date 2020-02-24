@@ -30,5 +30,15 @@ void read(std::string g)
 			cout << "Name: " << name[i] << name[i] << "\nFavorite Color: " << color[i] << "\nSlot" << i;
 		}
 	}
-
+	if (flag == false)
+	{
+		for (int i = 0; i < color.size(); i++)
+		{
+			if (color[i] == g)
+			{
+				flag = true;
+				cout << "Name: " << name[i] << "\nFavorite Color: " << color[i] << "\nSlot: " << i;
+			}
+		}
+	}
 }
