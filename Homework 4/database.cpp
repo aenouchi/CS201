@@ -62,4 +62,8 @@ void read(int g)
 			cout << "Name: " << name[i] << "\nFavorite Color: " << color[i] << "\nSlot: " << i;
 		}
 	}
+	if (flag == false)
+	{
+		cout << "Error: No input found.";
+	}
 }
