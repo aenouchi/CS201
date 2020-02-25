@@ -9,6 +9,9 @@
 #include <iostream>
 #include <math.h>
 
+using std::cout;
+using std::endl;
+
 void check(int x, int g1, int g2, int g3, int g4)
 {
 	int c = 0;
@@ -21,10 +24,12 @@ void check(int x, int g1, int g2, int g3, int g4)
 	if ((c % 1000) - (x % 100) == g2 * 100)
 		c++;
 	if (x- ((x % 1000) - ((x % 100))) == g2 * 1000)
-		u++;
-	y = 4 - c;
+		c++;
+	b = 4 - c;
 
-	if (c !=0 && b != 0)
+	if (c != 0 && b != 0)
+		cout << "You got " << c << "cows and " << b << " bulls!" << endl;
+	else
 }
 
 int main()
