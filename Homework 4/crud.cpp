@@ -72,3 +72,15 @@ void update()
 	cin >> im3;
 }
 
+int main()
+{
+	create("Mario", "Red");
+	create("Samus", "Orange");
+	create("Sonic", "Blue");
+	create("Link", "Green");
+	create("Ryu", "White");
+
+
+
+}
+
