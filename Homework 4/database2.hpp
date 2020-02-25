@@ -12,5 +12,13 @@
 #include <string>
 #include <map>
 
+using std::string;
+
+struct MyDatabaseRecord
+{
+	string name{ "name" };
+	string favouritecolor{ "color" };
+};
+
 
 #endif
