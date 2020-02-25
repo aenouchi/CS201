@@ -35,3 +35,22 @@ void see()
 
 		create(i1, i2);
 }
+
+void search ()
+{
+	string it;
+	int it3;
+
+	cout << "Would you like to search by Name/Color or by number?" << endl;
+	if (it == "number") 
+	{
+		cout << "Which entry would you like to read?" << endl;
+		cin >> it3;
+
+		read(it3);
+	}
+	else
+	{
+		cout << "What would "
+	}
+}
