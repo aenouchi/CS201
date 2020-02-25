@@ -29,7 +29,12 @@ void check(int x, int g1, int g2, int g3, int g4)
 
 	if (c != 0 && b != 0)
 		cout << "You got " << c << "cows and " << b << " bulls!" << endl;
+	else if (c == 0)
+		cout << "Oh that is " << b << "bulls spit..." << endl;
 	else
+	{
+		cout << "Holy" << c << "Cows" << endl;
+	}
 }
 
 int main()
