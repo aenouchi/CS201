@@ -61,4 +61,17 @@ bool win(int x, int g1, int g2, int g3, int g4)
 
 int main()
 {
+	int g1 = rand() % 9;
+
+	int g2 = rand() % 9;
+	while (g2 == g1)
+		g2 = rand() % 9;
+
+	int g3 = rand() % 9;
+	while (g3 == g2)
+		g2 = rand() % 9;
+
+	int g4 = rand() % 9;
+	while (g4 == g3)
+		g2 = rand() % 9;
 }
