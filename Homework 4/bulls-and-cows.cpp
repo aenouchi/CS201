@@ -37,6 +37,28 @@ void check(int x, int g1, int g2, int g3, int g4)
 	}
 }
 
+bool win(int x, int g1, int g2, int g3, int g4)
+{
+	int c = 0;
+
+	if (x % 10 == g4)
+		c++;
+
+	if ((x % 100) - (x % 10) == g3 * 10)
+		c++;
+
+	if ((x % 1000) - ((x % 100) - (x % 10)) == g2 * 100)
+		c++;
+
+	if (x - ((x % 1000) - ((x % 100) - (x % 10))) == g1 * 1000)
+		c++;
+
+	if (c == 4)
+		return true;
+
+	return false;
+}
+
 int main()
 {
 }
