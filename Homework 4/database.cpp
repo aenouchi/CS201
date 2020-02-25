@@ -74,6 +74,7 @@ void update(int x, std::string n, std::string c)
 	{
 		cout << "Error: slots do not exist in given range";
 	}
-
-	}
+	name[x] = n;
+	color[x] = x;
 }
+
