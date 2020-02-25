@@ -6,10 +6,11 @@
 *Jon Genetti
 *February 22,2020
 */
+#ifndef database_hpp
+#define database_hpp
 
-#include "database.hpp"
+#include <string>
+#include <map>
 
-using std::cout;
-using std::endl;
-using std::cin;
-using std::string;
+
+#endif
