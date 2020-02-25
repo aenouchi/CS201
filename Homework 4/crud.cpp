@@ -111,7 +111,7 @@ int main()
 		}
 		menu();
 	}
-}
+
 if (input == "update" || input == "u")
 {
 	foo();
