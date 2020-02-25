@@ -114,6 +114,20 @@ int main()
 }
 if (input == "update" || input == "u")
 {
-	yoo();
+	foo();
 
+	cout << "\n\nWould you like to update another entry?";
+	cin >> input;
+
+	if (input == "yes" || input == "y")
+	{
+		foo();
+	}
+	menu();
+}
+
+if (input == "delete" || input == "d")
+{
+	cout << "ok" << endl;
+}
 }
