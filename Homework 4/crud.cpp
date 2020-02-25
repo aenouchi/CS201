@@ -57,3 +57,18 @@ void search ()
 		read(it);
 	}
 }
+
+void update()
+{
+	int im;
+	string im2;
+	string im3;
+
+	cout << "Which entry number would you like to change? " << endl;
+	cin >> im;
+	cout << "What will you change the name to?" << endl;
+	cin >> im2;
+	cout << "What will you change their favourite color to?" << endl;
+	cin >> im3;
+}
+
