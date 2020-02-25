@@ -28,21 +28,21 @@ void see()
 	string i1;
 	string i2;
 
-		cout << "Input put a name" << endl;
-		cin >> i1;
-		cout << "\nInput their favourite color: ";
-		cin >> i2;
+	cout << "Input put a name" << endl;
+	cin >> i1;
+	cout << "\nInput their favourite color: ";
+	cin >> i2;
 
-		create(i1, i2);
+	create(i1, i2);
 }
 
-void argh ()
+void argh()
 {
 	string it;
 	int it3;
 
 	cout << "Would you like to search by Name/Color or by number?" << endl;
-	if (it == "number" || "entry number") 
+	if (it == "number" || "entry number")
 	{
 		cout << "Which entry would you like to read?" << endl;
 		cin >> it3;
@@ -89,7 +89,7 @@ int main()
 	if (input == "create" || input == "c")
 	{
 		see();
-		cout <<"\n Would you like to add another one?";
+		cout << "\n Would you like to add another one?";
 		cin >> input;
 
 		if (input == "yes" || input == "y")
@@ -98,7 +98,7 @@ int main()
 		}
 		menu();
 	}
-	
+
 	if (input == "read" || input == "r")
 	{
 		argh();
@@ -112,22 +112,22 @@ int main()
 		menu();
 	}
 
-if (input == "update" || input == "u")
-{
-	foo();
-
-	cout << "\n\nWould you like to update another entry?";
-	cin >> input;
-
-	if (input == "yes" || input == "y")
+	if (input == "update" || input == "u")
 	{
 		foo();
-	}
-	menu();
-}
 
-if (input == "delete" || input == "d")
-{
-	cout << "ok" << endl;
-}
+		cout << "\n\nWould you like to update another entry?";
+		cin >> input;
+
+		if (input == "yes" || input == "y")
+		{
+			foo();
+		}
+		menu();
+	}
+
+	if (input == "delete" || input == "d")
+	{
+		cout << "ok" << endl;
+	}
 }

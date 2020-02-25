@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bulls-and-cows.cpp" />
+    <ClCompile Include="crud2.cpp" />
+    <ClCompile Include="database2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="database2.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
