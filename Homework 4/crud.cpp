@@ -36,7 +36,7 @@ void see()
 		create(i1, i2);
 }
 
-void search ()
+void argh ()
 {
 	string it;
 	int it3;
@@ -58,7 +58,7 @@ void search ()
 	}
 }
 
-void update()
+void foo()
 {
 	int im;
 	string im2;
@@ -98,7 +98,22 @@ int main()
 		}
 		menu();
 	}
+	
+	if (input == "read" || input == "r")
+	{
+		argh();
 
+		cout << "\n\n Would you like like to read another entry?";
+		cin >> input;
+		if (input == "yes" || "y")
+		{
+			argh();
+		}
+		menu();
+	}
+}
+if (input == "update" || input == "u")
+{
+	yoo();
 
 }
-
