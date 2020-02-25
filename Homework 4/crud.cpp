@@ -42,7 +42,7 @@ void search ()
 	int it3;
 
 	cout << "Would you like to search by Name/Color or by number?" << endl;
-	if (it == "number") 
+	if (it == "number" || "entry number") 
 	{
 		cout << "Which entry would you like to read?" << endl;
 		cin >> it3;
@@ -80,6 +80,24 @@ int main()
 	create("Link", "Green");
 	create("Ryu", "White");
 
+	std::string input;
+	std::string input2;
+	int input3;
+
+	menu();
+
+	if (input == "create" || input == "c")
+	{
+		see();
+		cout <<"\n Would you like to add another one?";
+		cin >> input;
+
+		if (input == "yes" || input == "y")
+		{
+			see();
+		}
+		menu();
+	}
 
 
 }
