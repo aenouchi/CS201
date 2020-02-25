@@ -51,6 +51,9 @@ void search ()
 	}
 	else
 	{
-		cout << "What would "
+		cout << "What would you like to search for?" << endl;
+		cin >> it;
+
+		read(it);
 	}
 }
