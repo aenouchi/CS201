@@ -6,7 +6,7 @@
 *Jon Genetti
 *February 22,2020
 */
-#include <iostream>
+
 #include "database.hpp"
 
 using std::cout;
