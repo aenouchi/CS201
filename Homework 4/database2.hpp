@@ -20,5 +20,11 @@ struct MyDatabaseRecord
 	string favouritecolor{ "color" };
 };
 
+bool CreateRecord(const string& key);
+bool ReadRecord(const string& key, MyDatabaseRecord &record);
+bool UpdateRecord(const string& key, const MyDatabaseRecord &record);
+bool DeleteRecord(const string& key);
+bool InputRecord(MyDatabaseRecord &record);
+bool PrintRecord(const string& key);
 
 #endif
