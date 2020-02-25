@@ -76,21 +76,30 @@ int main()
 		g2 = rand() % 9;
 
 	int input;
-	bool win = false;
+	bool w = false;
 
-	while (win != true)
+	while (w != true)
 	{
 		cout << "Please input 4 intergers to guess the 'cows' from the 'bulls'." << endl;
 		std::cin >> input;
 
-		check(input, g1, g2, g3, g4);
-		std::cout << std::endl;
+		if (input < 0) {
+			cout << g1 << g2 << g3 << g4 << endl;
+		}
+		
+		else {
 
-		w = win(input, g1, g2, g3, g4);
+			check(input, g1, g2, g3, g4);
+			std::cout << std::endl;
+
+			w = win(input, g1, g2, g3, g4);
+		}
 	}
 
+	std::string ib;
+	cout << "Would you like to play again?" << endl;
+	std::cin >> ib;
 	
-
-
-	}
+	if (ib == "yes" || ib == "y")
+		main();
 }
