@@ -23,8 +23,22 @@ int main()
 
 	cout << "Please type in some text. When you are done, type end" << endl;
 
-	
-}
+	while (true)
+	{
+		getline(cin, str);
+		if (str == "End" || str == "end")
+		{
+			StringToTokensWS(str, tokens);
+			break;
+		}
+
+		if (ReadLine(str) == true)
+		{
+			StringToTokensWS(str, tokens);
+		}
+	}
+
+
 /**int digit(int x)
 {
 	int digit = 1;
