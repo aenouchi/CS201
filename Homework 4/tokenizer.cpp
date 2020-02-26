@@ -9,13 +9,23 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include "tokenizer.hpp"
 using std::cout;
 using std::endl;
 using std::string;
 using std::cin;
 using std::vector;
 
-int digit(int x)
+int main()
+{
+	vector<string> tokens;
+	string str; 
+
+	cout << "Please type in some text. When you are done, type end" << endl;
+
+	
+}
+/**int digit(int x)
 {
 	int digit = 1;
 	if (x == 0)
@@ -69,3 +79,4 @@ void analyzeTokens(const std::vector <std::string>& tokens)
 		cout << "\"" << s << "\" - " << type << endl;
 	}
  }
+ //*
