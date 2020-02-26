@@ -6,6 +6,8 @@
 *Jon Genetti
 *February 22,2020
 */
+#ifndef tokenizer_hpp
+#define tokenizer_hpp
 #pragma once //helps file is only in one comp
 #include <iostream>
 #include <string>
@@ -16,3 +18,5 @@ int digit(int x);
 bool ReadLine(std::string& str);
 unsigned stringToTokenWS(std::vector <std::string>& tokens);
 void analyzeTokens(const std::vector <std::string>& tokens);
+
+#endif

@@ -38,6 +38,10 @@ int main()
 		}
 	}
 
+	for (int i = 0; i < tokens.size(); i++) // Prints token vector
+	{
+		cout  << tokens[i] << endl;
+	}
 
 /**int digit(int x)
 {
