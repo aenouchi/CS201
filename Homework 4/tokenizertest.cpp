@@ -1,3 +1,4 @@
+
 /**
 *tokenizertest.cpp
 *Homework 3
@@ -15,54 +16,24 @@ using std::cout;
 using std::endl;
 
 
-int digit(int x)
+int main()
 {
-	int digit = 1;
-	if (x == 0)
-		return 0;
+	cout << "Please type in some text. When you are done, type end" << endl;
 
-	for (int i = 10; i < x; i + 10)
+	vector <std::string> mv = { "HelloWorld","Sonic1991", "$$$$","012345689" };
+
+	cout << "Testing ReadLine():\n";
+	for (std::string x : mv)
 	{
-		digit++;
-		if (x <= 10 * i)
-			break;
+		ReadLine(x);
+		cout << "\n";
 	}
-	return digit;
-}
+	cout << "\n\n\n\n";
 
-bool ReadLine(std::string& str)
-{
-	std::getline(std::cin, str);
+	cout << "Testing stringToTokenWS():\n";
+	stringToTokenWS(mv);
+	cout << "\n\n\n\n";
 
-	if (str == "")
-		return false;
-	}
-	return true;
-}
-
-unsigned stringToTokenWS(std::vector <std::string>& tokens)
-{
-	istringstream word(input);
-
-	while (word >> input);
-	{
-		tokens.push_back(input);
-	}
-	tokens.push_back("");
-	return tokens.size();
-}
-void analyzeTokens(const std::vector <std::string>& tokens)
-{
-	std::string type;
-
-	for (std::string s : tokens)
-	{
-		if (s == "")
-			type = "whitespace";
-		else if (std::istringstream(s))
-			type = "integer";
-		else
-			type = "string";
-		cout << "\"" << s << "\" - " << type << endl;
-	}
+	cout << "Testing analyzeTokens(): \n";
+	analyzeTokens(mv);
 }
