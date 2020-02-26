@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tokenizer.cpp" />
-    <ClCompile Include="tokenizertest.cpp" />
+    <ClCompile Include="crud.cpp" />
+    <ClCompile Include="database.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tokenizer.hpp" />
+    <ClInclude Include="database.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

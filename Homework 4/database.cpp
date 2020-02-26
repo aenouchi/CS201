@@ -10,9 +10,9 @@
 using std::cout;
 using std::endl;
 
-//std::vector <std::string> name;
-//std::vector <std::string> color;
-//std::vector <int> ref;
+std::vector <std::string> name;
+std::vector <std::string> color;
+std::vector <int> ref;
 
 void create(std::string nn, std::string nc)
 {

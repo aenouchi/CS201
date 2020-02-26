@@ -9,10 +9,6 @@
 
 #include "database2.hpp"
 
-using std::cout;
-using std::endl;
-using std::cin;
-using std::string;
 
 std::map<std::string, MyDatabaseRecord> theDatabase;
 
