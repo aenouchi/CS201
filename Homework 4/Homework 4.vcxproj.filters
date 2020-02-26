@@ -21,19 +21,10 @@
     <ClCompile Include="tokenizertest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tokenizerteste.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tokenizere.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tokenizer.hpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tokenizere.hpp">
-      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

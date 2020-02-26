@@ -20,13 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tokenizer.cpp" />
-    <ClCompile Include="tokenizere.cpp" />
     <ClCompile Include="tokenizertest.cpp" />
-    <ClCompile Include="tokenizerteste.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tokenizer.hpp" />
-    <ClInclude Include="tokenizere.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
