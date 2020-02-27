@@ -1,4 +1,3 @@
-
 /**
 *tokenizertest.cpp
 *Homework 3
@@ -7,6 +6,7 @@
 *Jon Genetti
 *February 22,2020
 */
+
 #include <iostream>
 #include "tokenizer.hpp"
 #include <vector>
@@ -14,26 +14,24 @@
 using std::vector;
 using std::cout;
 using std::endl;
+using std::string;
 
-
-int main()
+bool ReadLine(string& user)
 {
-	cout << "Please type in some text. When you are done, type end" << endl;
-
-	vector <std::string> mv = { "HelloWorld","Sonic1991", "$$$$","012345689" };
-
-	cout << "Testing ReadLine():\n";
-	for (std::string x : mv)
+	if (user == "")
 	{
-		ReadLine(x);
-		cout << "\n";
+		return false;
 	}
-	cout << "\n\n\n\n";
+	return true;
+}
 
-	cout << "Testing stringToTokenWS():\n";
-	stringToTokenWS(mv);
-	cout << "\n\n\n\n";
-
-	cout << "Testing analyzeTokens(): \n";
-	analyzeTokens(mv);
+unsigned stringtotokenWS(string& input, vector<string>& tokens)
+{
+	istringstream word(input);
+	while (word >> input)
+	{
+		tokens.push_back(input)
+	}
+	tokens.push_back("");
+		return tokens.size();
 }

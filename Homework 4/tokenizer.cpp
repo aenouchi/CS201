@@ -31,6 +31,12 @@ int main()
 				stringtotokenWS(user, tokens);
 				break;
 			}
+			if (ReadLine(user) == true)
+			{
+				stringtotokenWS(user, tokens);
+			}
 		}
+
+		return 0;
 
 }

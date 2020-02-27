@@ -13,6 +13,7 @@
 #include <string>
 #include <vector>
 #include <sstream> //provides string stream classes
+using std::istringstream
 
 int digit(int x);
 bool ReadLine(std::string& str);

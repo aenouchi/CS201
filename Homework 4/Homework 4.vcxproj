@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="hold.cpp" />
     <ClCompile Include="tokenizer.cpp" />
+    <ClCompile Include="tokenizertest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tokenizer.hpp" />
