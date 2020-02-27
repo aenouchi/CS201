@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="database.cpp">
+    <ClCompile Include="tokenizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="crud.cpp">
+    <ClCompile Include="tokenizertest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="database.hpp">
+    <ClInclude Include="tokenizer.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
