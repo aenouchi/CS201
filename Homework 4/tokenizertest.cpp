@@ -49,6 +49,15 @@ void AnalyzeTokens(vector<string>& tokens) //Will Identify the type of tokens
 		for (int u = 0; u < i.size(); u++)
 		{
 			if (user != 0 && user != 1)
+			{
+				break;
+			}
+			if (i.at(u) == && i.at(i.size() - 1) == '"')
+			{
+				user = 2;
+				break;
+			}
+
 		}
 	}
 	
