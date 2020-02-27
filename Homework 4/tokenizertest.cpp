@@ -57,7 +57,13 @@ void AnalyzeTokens(vector<string>& tokens) //Will Identify the type of tokens
 				user = 2;
 				break;
 			}
-
+			for (char c = 20; c <= 100; c++)
+			{
+				if (i.at(u) == c)
+					user = 1;
+				break;
+			}
+			else if (i.at(u) != c)
 		}
 	}
 	
