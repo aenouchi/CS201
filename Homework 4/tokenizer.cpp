@@ -6,10 +6,11 @@
 *Jon Genetti
 *February 22,2020
 */
+#include "tokenizer.hpp"
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include "tokenizer.hpp"
+
 using std::cout;
 using std::endl;
 using std::string;
@@ -21,21 +22,24 @@ int main()
 	string user;
 	vector<string> tokens;
 		
-		cout << "Please type in some text. When you are done, type \"end\" " << endl;
+		cout << "Please type in some text, it will be converted to tokens. When you are done, type \"end\" " << endl;
 
 		while (true)
 		{
 			getline(cin, user);
 			if (user == "end")
 			{
-				stringtotokenWS(user, tokens);
+				StringToTokensWS(user, tokens);
 				break;
 			}
 			if (ReadLine(user) == true)
 			{
-				stringtotokenWS(user, tokens);
+				StringToTokensWS(user, tokens);
 			}
 		}
+		tokens.pop_back();
+
+		AnalyzeTokens(tokens);
 
 		return 0;
 

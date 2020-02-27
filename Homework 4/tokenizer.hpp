@@ -14,9 +14,11 @@
 #include <vector>
 #include <sstream> //provides string stream classes
 using std::istringstream;
+using std::string;
+using std::vector;
 
-bool ReadLine(std::string& str);
-unsigned stringtotokenWS (std::string& input, std::vector<std::string>& tokens);
-void analyzeTokens(const std::vector<std::string>& tokens);
+bool ReadLine(string& user);
+unsigned StringToTokensWS (string& input, vector<string>& tokens);
+void AnalyzeTokens(vector<string>& tokens);
 
 #endif

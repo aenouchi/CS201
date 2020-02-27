@@ -25,7 +25,7 @@ bool ReadLine(string& user)
 	return true;
 }
 
-unsigned stringtotokenWS(string& input, vector<string>& tokens)
+unsigned StringToTokensWS(string& input, vector<string>& tokens)
 {
 	istringstream word(input);
 	while (word >> input)
@@ -38,7 +38,6 @@ unsigned stringtotokenWS(string& input, vector<string>& tokens)
 
 void AnalyzeTokens(vector<string>& tokens) //Will Identify the type of tokens
 {
-	int flag = 0;
 	int tokentype = 0;
 	for (auto i : tokens)
 	{
@@ -48,54 +47,54 @@ void AnalyzeTokens(vector<string>& tokens) //Will Identify the type of tokens
 		}
 		for (int u = 0; u < i.size(); u++)
 		{
-			if (flag != 0 && flag != 1)
+			if (tokentype != 0 && tokentype != 1)
 			{
 				break;
 			}
 			if (i.at(u) == '"' && i.at(i.size() - 1) == '"')
 			{
-				flag = 2;
+				tokentype = 2;
 				break;
 			}
-			for (char c = 20; c <= 100; c++)
+			for (char c = 48; c <= 57; c++)
 			{
 				if (i.at(u) == c)
 				{
-					flag = 1;
+					tokentype = 1;
 					break;
 			}
 			else if (i.at(u) != c)
 			{
-				flag = 3;
+					tokentype = 3;
 			}
 		}
 	}
-	if (flag == 0)
+	if (tokentype == 0)
 	{
-		cout << "[unknown]" << endl;
+		cout << "[unknown]\t";
 	}
-	if (flag == 1)
+	if (tokentype == 1)
 	{
-		cout << "[integer]" << endl;
+		cout << "[integer]\t";
 	}
-	if (flag == 2)
+	if (tokentype == 2)
 	{
-		cout << "[string]" << endl;
+		cout << "[string]\t";
 		cout << "\"\\\"" << i.substr(1, i.size() - 2) << "\"\\\"" << endl;
 
 	}
-	if (flag == 3)
+	if (tokentype == 3)
 	{
-		cout << "[identifier]" << endl;
+		cout << "[identifier]\t";
 	}
-	if (flag == 4)
+	if (tokentype == 4)
 	{
-		cout << "[whitespace]" << endl;
+		cout << "[whitespace]\t";
 	}
-	if (flag == 2)
+	if (tokentype == 2)
 	{
 		cout << "\"" << i << "\"" << endl;
 	}
-	flag = 0;
+	tokentype = 0;
 }
 }
