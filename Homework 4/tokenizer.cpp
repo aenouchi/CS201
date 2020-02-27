@@ -21,8 +21,16 @@ int main()
 	string user;
 	vector<string> tokens;
 		
-		cout << "Please type in some text. When you are done, type end" << endl;
+		cout << "Please type in some text. When you are done, type \"end\" " << endl;
 
 		while (true)
+		{
+			getline(cin, user);
+			if (user == "end")
+			{
+				stringtotokenWS(user, tokens);
+				break;
+			}
+		}
 
 }
