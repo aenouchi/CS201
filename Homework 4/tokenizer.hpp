@@ -13,9 +13,8 @@
 #include <string>
 #include <vector>
 #include <sstream> //provides string stream classes
-using std::istringstream
+using std::istringstream;
 
-int digit(int x);
 bool ReadLine(std::string& str);
 unsigned stringtotokenWS (std::string& input, std::vector<std::string>& tokens);
 void analyzeTokens(const std::vector<std::string>& tokens);
