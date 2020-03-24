@@ -1,5 +1,5 @@
 /**
-*floating_point_main.cpp
+*floating_point.cpp
 *Lab 19
 *Aaron Nouchi
 *CS 201
