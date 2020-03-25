@@ -22,5 +22,5 @@ vector<double> degreesToRadians(int degrees) {
 	for (int degree = 0; degree <= degrees; ++degree) {
 		radians.push_back(degree / 180 * M_PI);
 	}
-
+	return radians;
 }
