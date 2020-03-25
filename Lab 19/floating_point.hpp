@@ -18,6 +18,6 @@ using std::endl;
 using std::cin;
 using std::vector;
 
-vector<double>
+vector<double> degreesToRadians(int degree);
 
 #endif
