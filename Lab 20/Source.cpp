@@ -20,6 +20,7 @@ using std::cout;
 using std::endl;
 using std::cin;
 using std::vector;
+using std::setprecision;
 
 int main()
 {
@@ -33,6 +34,10 @@ int main()
 	for (double x : ang)
 	{
 		rad.push_back(x * (M_PI / 180)); //Converts to radians
+	}
+	for (int i = 0; i < rad.size(); i++)
+	{
+		cout << setprecision(8) << "angle: " << ang[i] << "\n cos:" << cos(ang[i]) << endl;
 	}
 }
 
