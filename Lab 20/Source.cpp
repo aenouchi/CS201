@@ -21,6 +21,8 @@ using std::endl;
 using std::cin;
 using std::vector;
 using std::setprecision;
+using std::setw;
+using std::fixed;
 
 int main()
 {
@@ -43,7 +45,7 @@ int main()
 	for (int i = 0; i < rad.size(); i++)
 	{
 		
-		cout << setprecision(8) << "angle: " << ang[i] << "\n cos:" << cos(rad[i]) << endl;
+		cout << setw(3) << "angle: " << ang[i] << "\n cos:" << setprecision(8) << setw(12) << cos(rad[i]) << endl;
 
 	}
 }
