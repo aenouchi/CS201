@@ -18,3 +18,12 @@ using std::endl;
 using std::cin;
 using std::vector;
 
+int main()
+{
+	vector <double> ang;
+	for (double i = 0; i < 180; i += 5) //increments of degrees
+	{
+		ang.push_back(i);
+	}
+}
+
