@@ -25,5 +25,11 @@ int main()
 	{
 		ang.push_back(i);
 	}
+
+	vector <double> rad;
+	for (double x : ang)
+	{
+		rad.push_back(x * (M_PI / 180)); //Converts to radians
+	}
 }
 
