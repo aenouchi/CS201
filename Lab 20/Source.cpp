@@ -44,9 +44,11 @@ int main()
 	
 	for (int i = 0; i < rad.size(); i++)
 	{
-		
-		cout << setw(3) << "angle: " << ang[i] << "\n cos:" << setprecision(8) << setw(12) << cos(rad[i]) << endl;
+
+		cout << "angle: " << setw(3) <<  ang[i] << "\n cos:" << setprecision(8) << setw(12) << cos(rad[i]) << endl;
+
 
 	}
+	
 }
 
