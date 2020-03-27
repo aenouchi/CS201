@@ -8,10 +8,13 @@
 * March 25,2020
 */
 
-
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
 #include <vector>
+#include <cmath>
+#include <iomanip>
+#include <sstream>
 
 using std::cout;
 using std::endl;
