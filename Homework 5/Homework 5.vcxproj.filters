@@ -18,12 +18,12 @@
     <ClCompile Include="fltk-trunc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="truncstruct.cpp">
+    <ClCompile Include="..\..\..\..\Downloads\truncstruct.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="truncstruct.hpp">
+    <ClInclude Include="..\..\..\..\Downloads\truncstruct.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
