@@ -24,6 +24,7 @@ int main()
 	cout << "\n\n\n";
 
 	StringInfo x = trunc8(input);
-
+	cout << x.str << endl;
+	cout << x.len;
 
 }
