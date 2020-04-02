@@ -8,11 +8,22 @@
 */
 
 #include "truncstruct.hpp"
+#include "truncstruct.cpp"
 #include <iostream>
+
 using std::cin;
 using std::cout;
+using std::string;
+using std::endl;
 
 int main()
 {
+	string input;
+	cout << "Input a string:" << endl;
+	cin >> input;
+	cout << "\n\n\n";
+
+	StringInfo x = trunc8(input);
+
 
 }
