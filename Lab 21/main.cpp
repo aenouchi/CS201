@@ -8,7 +8,7 @@
 */
 
 #include "truncstruct.hpp"
-#include "truncstruct.cpp"
+
 #include <iostream>
 
 using std::cin;
