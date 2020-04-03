@@ -61,6 +61,21 @@ map <string, int> mapSort(map <string, int> list)
 
 int main()
 {
+	map<string, int> mp;
+	mp["peperoni"] = 4;
+	mp["cheese"] = 1;
+	mp["anchovies"] = 3;
+	mp["spiniach"] = 2;
+	mp["pineapple"] = 5;
+
+	mp.erase("pineapple");
+
+	map <string, int> sorted = mapSort(mp);
+
+	for (auto x : sorted)
+	{
+		cout << x.first << ", " << x.second << endl;
+	}
 
 }
 
