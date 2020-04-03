@@ -32,9 +32,32 @@ map <string, int> mapSort(map <string, int> list)
 
 	for (int k = 0; k < count.size(); k++)
 	{
-
+		int small = count[0];
+		for (int i = 1; i < count.size(); i++)
+		{
+			if (count[i] < small)
+				small = count[i];
+		}
+		order.push_back(count[small]);
+		count.erase(count.begin() + small);
 	}
+	for (int i = 0; i < order.size(); i++)
+	{
+		for (auto k : list)
+		{
+			if (k.second == order[i])
+			{
+				std::string str = k.first;
+				good[str] = order[i];
+				break;
+			}
+		}
+	}
+
+	return good;
 }
+
+
 
 int main()
 {
