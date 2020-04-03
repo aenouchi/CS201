@@ -20,6 +20,14 @@ using std::vector;
 using std::map;
 
 map <string, int> mapSort(map <string, int> list)
+{
+
+}
+
+int main()
+{
+
+}
 
 
 
