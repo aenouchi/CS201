@@ -8,8 +8,20 @@
 */
 
 #include <iostream>
+#include <vector>
+#include <string>
+#include <map>
 
 using std::cin;
 using std::cout;
 using std::string;
 using std::endl;
+using std::vector;
+using std::map;
+
+map <string, int> mapSort(map <string, int> list)
+
+
+
+
+
