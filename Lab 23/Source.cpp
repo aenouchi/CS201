@@ -21,7 +21,19 @@ using std::map;
 
 map <string, int> mapSort(map <string, int> list)
 {
+	vector<int> order;
+	map <string, int> good;
 
+	vector <int> count;
+	for (auto h : list)
+	{
+		count.push_back(h.second);
+	}
+
+	for (int k = 0; k < count.size(); k++)
+	{
+
+	}
 }
 
 int main()
