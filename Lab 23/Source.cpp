@@ -32,11 +32,12 @@ map <string, int> mapSort(map <string, int> list)
 
 	for (int k = 0; k < count.size(); k++)
 	{
-		int small = count[0];
+		int small = 0;
 		for (int i = 1; i < count.size(); i++)
 		{
 			if (count[i] < small)
-				small = count[i];
+				small = i;
+
 		}
 		order.push_back(count[small]);
 		count.erase(count.begin() + small);
@@ -68,7 +69,7 @@ int main()
 	mp["spiniach"] = 2;
 	mp["pineapple"] = 5;
 
-	mp.erase("pineapple");
+	//mp.erase("pineapple");
 
 	map <string, int> sorted = mapSort(mp);
 
