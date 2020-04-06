@@ -100,7 +100,31 @@ void PrintDistributionU(int min, int max)
 	}
 }
 
-int main()
+void PrintDistribution(int min, int max)
+{
+	random_device r;
+
+	int mean = RandomBetween(min, max);
+
+	cout << "Randomly chosen mean:" << mean << endl;
+
+	//Generate a distribution around mean
+	seed_seq seed2{ r(), r(), r(), r(), r(), r(), r(), r(), };
+	mt19937 e2(seed2);
+	normal_distribution<> normal_dist(mean, 2);
+
+	map<int, int> hist;
+	for (int n = 0; n < 10000; ++n) {
+		++hist[round(normal_dist(e2))];
+	}
+	cout << "Normal distribution around " << mean << ":\n";
+	for (auto p : hist) {
+		cout << fixed << std::setprecision(1) << std::setw(2) << p.first << ' ' << string(p.second / 200, '*') << endl;
+
+	}
+}
+
+	int main()
 {
 
 }
