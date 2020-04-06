@@ -41,6 +41,11 @@ int RandomBetweenN(double first, double last)
 	return dis(gen);
 }
 
+int RandomBetween(int first, int last)
+{
+	return rand() % last + first;
+}
+
 int main()
 {
 
