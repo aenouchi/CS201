@@ -33,6 +33,14 @@ int RandomBetweenU(int first, int last)
 	return dis(ran);
 }
 
+int RandomBetweenN(double first, double last)
+{
+	random_device ran;
+	mt19937 gen(ran());
+	normal_distribution<double> dis(first, last);
+	return dis(gen);
+}
+
 int main()
 {
 
