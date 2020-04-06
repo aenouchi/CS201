@@ -17,6 +17,8 @@ int main()
 	cout << "I will try to guess the animal within ten questions. \n" << endl;
 
 	cout << "Does your animal typically walk on four legs? (yes/no)\n" << endl;
+
+	
 	
 	cout << "Does your animal have hooves? (yes/no)\n" << endl;
 

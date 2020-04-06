@@ -20,6 +20,18 @@ using std::cout;
 using std::endl;
 using std::cin;
 using std::map;
+using std::random_device;
+using std::mt19937;
+using std::uniform_int_distribution;
+using std::normal_distribution;
+
+int RandomBetweenU(int first, int last)
+{
+	random_device ran;
+	mt19937 gen(ran());
+	uniform_int_distribution<int> dis(first, last);
+	return dis(ran);
+}
 
 int main()
 {
