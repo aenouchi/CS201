@@ -126,5 +126,17 @@ void PrintDistribution(int min, int max)
 
 	int main()
 {
+		int min = 3;
+		int max = 9;
 
+		cout << "Uniform Distribution:" << endl;
+		PrintDistributionU(min, max);
+		cout << "\n\n" << endl;
+
+		cout << "Normal Distribution:" << endl;
+		PrintDistributionN(min, max);
+		cout << "\n\n" << endl;
+
+		cout << "Purely Random Distribution:" << endl;
+		PrintDistribution(min, max);
 }
