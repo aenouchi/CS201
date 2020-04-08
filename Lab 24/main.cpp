@@ -22,7 +22,7 @@ using std::map;
 int main()
 {
 
-	map<string, int> koopalings;
+		map<string, int> koopalings;
 	koopalings["Iggy"] = 4;
 	koopalings["Wendy"] = 3;
 	koopalings["Larry"] = 1;
@@ -34,11 +34,19 @@ int main()
 	koopalings["Kamek"] = 9;
 	koopalings["Bowser"] = 10;
 
-	vector <int> koopakids; //Changing map to vector rather than changing previous code
+	vector <int> koopakids; //Changing map to vector 
 	for (auto x : koopalings)
 	{
 		int y = x.second;
 		koopakids.push_back(y);
 	}
+
+	cout << "Alphabetical/Initial List:" << endl;
+	for (auto v : koopakids)
+	{
+		cout << v << endl;
+	}
+	cout << "\n\n";
+
 
 }
