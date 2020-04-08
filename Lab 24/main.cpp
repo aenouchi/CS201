@@ -49,11 +49,34 @@ int main()
 	cout << "\n\n";
 
 	sort(koopakids.begin(), koopakids.end());
-	cout << "Sorted by Number List:" << endl;
+	cout << "Sorted by Number List (sort):" << endl;
 	for (int num : koopakids)
 	{
 		cout << num << endl;
 	}
+	cout << "\n\n";
 
+	reverse(koopakids.begin(), koopakids.end());
+	cout << "Sorted by reversed Number List (reverse):" << endl;
+	for (int num : koopakids)
+	{
+		cout << num << endl;
+	}
+	cout << "\n\n";
 
-}
+	reverse(koopakids.begin(), koopakids.end());
+	cout << "Sorted by reversed Number List (reverse):" << endl;
+	for (int num : koopakids)
+	{
+		cout << num << endl;
+	}
+	cout << "\n\n";
+
+	fill(koopakids.begin(), koopakids.begin() + 4, 5);
+	fill(koopakids.begin() + 3, koopakids.end() - 2, 8);
+
+	cout << "Added numbers in positions (fill):";
+	for (auto v : koopakids)
+		cout << v << endl;
+	
+	}
