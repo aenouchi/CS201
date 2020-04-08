@@ -21,8 +21,9 @@ using std::map;
 
 int main()
 {
+
 	map<string, int> koopalings;
-	koopalings["Iggy"] = 4 ;
+	koopalings["Iggy"] = 4;
 	koopalings["Wendy"] = 3;
 	koopalings["Larry"] = 1;
 	koopalings["Ludwig"] = 7;
@@ -32,4 +33,12 @@ int main()
 	koopalings["BowserJr"] = 8;
 	koopalings["Kamek"] = 9;
 	koopalings["Bowser"] = 10;
+
+	vector <int> koopakids; //Changing map to vector rather than changing previous code
+	for (auto x : koopalings)
+	{
+		int y = x.second;
+		koopakids.push_back(y);
+	}
+
 }
