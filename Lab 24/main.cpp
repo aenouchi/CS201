@@ -48,5 +48,12 @@ int main()
 	}
 	cout << "\n\n";
 
+	sort(koopakids.begin(), koopakids.end());
+	cout << "Sorted by Number List:" << endl;
+	for (int num : koopakids)
+	{
+		cout << num << endl;
+	}
+
 
 }
