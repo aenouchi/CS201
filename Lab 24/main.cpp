@@ -1,6 +1,6 @@
 /**
 *main.cpp
-*Homework 6
+*Lab 24
 *Aaron Nouchi
 *CS 201
 *Jon Genetti
