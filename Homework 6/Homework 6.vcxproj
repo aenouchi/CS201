@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hangman.cpp" />
+    <ClCompile Include="math-catch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hangman.hpp" />
+    <ClInclude Include="Catch2-master\include\catch.hpp" />
+    <ClInclude Include="Catch2-master\include\catch_with_main.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
