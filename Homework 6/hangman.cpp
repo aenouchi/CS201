@@ -17,35 +17,38 @@ int main()
 	cgoal.push_back('z');
 	cgoal.push_back('z');
 
+	cout << "Let's play Hangman, you have ten guesses to guess my word." << endl;
+	cout << "Enter a lower case letter." << endl;
+
 	char input;
 
 	for (int t = 0; t < 10; t++)
 	{
 		printGuessed;
 
-		//Input
+		
 		cout << "What is your next character?" << endl;
 		cin >> input;
 		cout << "\n\n";
 
-		//Check input
+		
 		check(input);
 		cout << "\n";
 
-		//Did you win?
+		
 		winCondition;
 		if (win)
 		{
-			cout << "Congratulations, you've won!" << endl;
+			cout << "You win" << endl;
 			break;
 		}
 
 		cout << "--------------------------------------------\n" << endl;
 	}
 
-	//lose after 10 turns
+	//after ten turns
 	if (!win)
 	{
-		cout << "Uh uh, you lost  =/" << endl;
+		cout << "You lost." << endl;
 	}
 }
