@@ -10,8 +10,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#ifndef hangman.hpp
-#define hangman.hpp
+
+#ifndef hangman_hpp
+#define hangman_hpp
 
 using std::cout;
 using std::endl;
@@ -35,7 +36,7 @@ auto printGuessed = [](vector<char> f) // Shows letters that are used
 
 		for (char cha : f)
 		{
-			cout << cha << ", ";
+			cout << cha << ", " << endl;
 		}
 	}
 };
@@ -43,12 +44,12 @@ auto printGuessed = [](vector<char> f) // Shows letters that are used
 auto charSet = []()
 {
 	cgoal.push_back(answer[0]);
-	bool boo;
+	bool bul;
 
 	//current letter in answer
 	for (int c = 1; answer.size(); c++)
 	{
-		boo = true;
+		bul = true;
 
 		//sees if letter is used
 		for (int d = 0; d < cgoal.size(); d++)
@@ -56,10 +57,15 @@ auto charSet = []()
 
 			if (answer[c] == cgoal[d])
 			{
-				boo = false;
+				bul = false;
 			}
 		}
-	};
+		if (bul)
+		{
+			cgoal.push_back(answer[c]);
+		}
+	}
+};
 
 	auto check = [](char letter)
 	{
@@ -88,10 +94,10 @@ auto charSet = []()
 	{
 		int cletter = 0;
 
-		
+
 		for (int i = 0; i < got.size(); i++)
 		{
-			
+
 			for (int q = 0; q < cgoal.size(); q++)
 			{
 				if (got[i] == cgoal[q])
