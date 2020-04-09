@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hangman.cpp" />
-    <ClCompile Include="math-catch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hangman.hpp" />

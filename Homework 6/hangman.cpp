@@ -49,6 +49,6 @@ int main()
 	//after ten turns
 	if (!win)
 	{
-		cout << "You lost." << endl;
+		cout << "You lost" << endl;
 	}
 }
