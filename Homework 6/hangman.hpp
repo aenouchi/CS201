@@ -25,6 +25,8 @@ vector<char> cgoal;
 vector<char> got;
 vector<char> guessed;
 
+bool win = false; // No auto win
+
 auto printGuessed = [](vector<char> f) // Shows letters that are used
 {
 	if (guessed.size() != 0)
@@ -38,5 +40,71 @@ auto printGuessed = [](vector<char> f) // Shows letters that are used
 	}
 };
 
+auto charSet = []()
+{
+	cgoal.push_back(answer[0]);
+	bool boo;
+
+	//current letter in answer
+	for (int c = 1; answer.size(); c++)
+	{
+		boo = true;
+
+		//sees if letter is used
+		for (int d = 0; d < cgoal.size(); d++)
+		{
+
+			if (answer[c] == cgoal[d])
+			{
+				boo = false;
+			}
+		}
+	};
+
+	auto check = [](char letter)
+	{
+		bool correct = false;
+
+		guessed.push_back(letter);
+
+		for (int i = 0; i < cgoal.size; i++)
+		{
+			if (letter == cgoal[i])
+			{
+				got.push_back(letter);
+				cout << "Got one" << endl;
+				correct = true;
+				break;
+			}
+		}
+
+		if (!correct)
+		{
+			cout << "Not in awnser" << endl;
+		}
+	};
+
+	auto winCondition = []()
+	{
+		int cletter = 0;
+
+		
+		for (int i = 0; i < got.size(); i++)
+		{
+			
+			for (int q = 0; q < cgoal.size(); q++)
+			{
+				if (got[i] == cgoal[q])
+				{
+					cletter++;
+				}
+			}
+		}
+
+		if (cletter == cgoal.size())
+		{
+			win = true;
+		}
+	};
 
 #endif
