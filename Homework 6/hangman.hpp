@@ -86,7 +86,7 @@ auto charSet = []()
 
 		if (!correct)
 		{
-			cout << "Not in awnser" << endl;
+			cout << "Not in answer" << endl;
 		}
 	};
 
