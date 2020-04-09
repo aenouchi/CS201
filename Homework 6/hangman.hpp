@@ -73,7 +73,7 @@ auto charSet = []()
 
 		guessed.push_back(letter);
 
-		for (int i = 0; i < cgoal.size; i++)
+		for (int i = 0; i < cgoal.size(); i++)
 		{
 			if (letter == cgoal[i])
 			{
