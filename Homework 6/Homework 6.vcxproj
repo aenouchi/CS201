@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="shopping.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shopping.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{85E72B04-C035-4D88-991B-4187BCDB71F9}</ProjectGuid>
