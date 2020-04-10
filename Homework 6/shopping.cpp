@@ -83,4 +83,17 @@ int main()
 
 				remove(cart[input], intput);
 			}
+			else
+			{
+				loop = false;
+				break;
 			}
+	}
+	double total = 0;
+	total += cart["candy"].cost();
+	total += cart["game"].cost();
+	total += cart["pillow"].cost();
+	total += cart["jeans"].cost();
+	total += cart["book"].cost();
+	cout << "Your total is: $" << total << endl;
+	}
