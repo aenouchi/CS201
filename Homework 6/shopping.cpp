@@ -29,4 +29,11 @@ int main()
 	cart["jeans"] = jeans;
 	cart["book"] = book;
 
-	
+	cout << "It is dangerous to go alone, buy some of these!" << endl;
+	cout << "candy, " << candy.getPrice() << endl;
+	cout << "game, " << game.getPrice() << endl;
+	cout << "pillow, " << pillow.getPrice() << endl;
+	cout << "jeans, " << jeans.getPrice() << endl;
+	cout << "book, " << book.getPrice() << endl;
+	cout << "\n\n";
+}
