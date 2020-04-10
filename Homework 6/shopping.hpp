@@ -20,7 +20,7 @@ using std::cin;
 using std::map;
 using std::string;
 
-struct cart
+struct record
 {
 	void setPrice(double d)
 	{
@@ -52,9 +52,9 @@ private:
 	int units = 0;
 };
 
-void add(cart c, int i);
+void add(record r, int i);
 
-void remove(cart c, int i);
+void remove(record r, int i);
 
 #endif
 
