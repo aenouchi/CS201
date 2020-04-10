@@ -66,4 +66,21 @@ int main()
 
 				add(cart[input], intput);
 			}
+			else if (input == "remove") //Removing stuff
+			{
+				cout << "What would you like to remove?" << endl;
+				cout << "candy - " << cart["candy"].getUnits() << endl;
+				cout << "game - " << cart["game"].getUnits() << endl;
+				cout << "pillow - " << cart["pillow"].getUnits() << endl;
+				cout << "jeans - " << cart["jeans"].getUnits() << endl;
+				cout << "book - " << cart["book"].getUnits() << endl;
+				cout << "\n";
+
+				cin >> input;
+				cout << "How much?" << endl;
+				cin >> intput;
+				cout << endl;
+
+				remove(cart[input], intput);
+			}
 			}
