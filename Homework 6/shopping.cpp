@@ -52,4 +52,18 @@ int main()
 			if (input == "add")
 			{
 				cout << "What would you like to add?" << endl;
+				cout << "candy, " << cart["candy"].getPrice() << endl;
+				cout << "game, " << cart["game"].getPrice() << endl;
+				cout << "pillow, " << cart["pillow"].getPrice() << endl;
+				cout << "jeans, " << cart["jeans"].getPrice() << endl;
+				cout << "book, " << cart["book"].getPrice() << endl;
+				cout << "\n";
+
+				cin >> input;
+				cout << "How much?" << endl;
+				cin >> intput;
+				cout << endl;
+
+				add(cart[input], intput);
+			}
 			}
