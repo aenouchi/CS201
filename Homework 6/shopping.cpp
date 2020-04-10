@@ -36,4 +36,20 @@ int main()
 	cout << "jeans, " << jeans.getPrice() << endl;
 	cout << "book, " << book.getPrice() << endl;
 	cout << "\n\n";
-}
+
+	bool loop = true;
+	while (loop)
+	{
+			cout << "What would you like?" << endl;
+			cout << "add \nremove \ncheckout\n" << endl;
+
+			string input;
+			cin >> input;
+			int intput;
+			cout << endl;
+
+			//Adding stuff
+			if (input == "add")
+			{
+				cout << "What would you like to add?" << endl;
+			}
