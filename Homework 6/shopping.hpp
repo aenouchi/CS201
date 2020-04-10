@@ -52,9 +52,13 @@ private:
 	int units = 0;
 };
 
-void add(record r, int i);
+void add(record r, int i) {
 
-void remove(record r, int i);
+};
+
+void remove(record r, int i) {
+
+};
 
 #endif
 

@@ -90,10 +90,14 @@ int main()
 			}
 	}
 	double total = 0;
+	
 	total += cart["candy"].cost();
 	total += cart["game"].cost();
 	total += cart["pillow"].cost();
 	total += cart["jeans"].cost();
 	total += cart["book"].cost();
+
+	total = cart["candy"].cost() + cart["game"].cost() + cart["pillow"].cost() + cart["jeans"].cost() + cart["book"].cost();
+
 	cout << "Your total is: $" << total << endl;
 	}
