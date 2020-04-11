@@ -27,7 +27,7 @@ int main()
 	same.first = *nu.first;
 	same.second = *nu.second;
 
-	if (same.first = set2.size())
+	if (same.first == set2.end())
 	{
 		cout << " Both vectors are identical" << endl;
 		
