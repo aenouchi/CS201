@@ -10,6 +10,7 @@
 using std::cout;
 using std::endl;
 using std::cin;
+using std::string;
 
 int main()
 {
@@ -17,10 +18,33 @@ int main()
 	cout << "I will try to guess the animal within ten questions. \n" << endl;
 
 	cout << "Does your animal typically walk on four legs? (yes/no)\n" << endl;
+	
+	string input;
+
+	cin >> input;
+
+	if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+	{
+		cout << "Does your animal have hooves? (yes/no)\n" << endl;
+
+		cin >> input;
+
+		if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+		{
+			cout << "Is it a hybrid animal? (yes/no)\n" << endl;
+
+			cin >> input;
+			if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+			{
+			cout << "Is it a Mule?\n" << endl;
+		}
+
+		}
+	}
 
 	
 	
-	cout << "Does your animal have hooves? (yes/no)\n" << endl;
+	/*cout << "Does your animal have hooves? (yes/no)\n" << endl;
 
 	cout << "Is it a hybrid animal? (yes/no)\n" << endl;
 
@@ -90,5 +114,5 @@ int main()
 
 	cout << "You win...Or cheated.\n" << endl;
 
-	cout << "Do you want to play again? (yes/no)\n" << endl;
+	cout << "Do you want to play again? (yes/no)\n" << endl;*/
 }

@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="shopping.cpp" />
+    <ClInclude Include="hangman.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shopping.hpp" />
+    <ClCompile Include="hangman.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
