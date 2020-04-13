@@ -9,6 +9,17 @@
 
 #include <iostream>
 #include "lambdas.hpp"
+#include <algorithm>
+#include <vector>
+#include <utility>
+#include <string>
+#include <cstdlib>
+
+using std::string;
+using std::vector;
+using std::pair;
+using std::size_t;
+
 
 int main()
 {
