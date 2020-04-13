@@ -8,8 +8,14 @@
 */
 
 #include <iostream>
+#include "lambdas.hpp"
 
 int main()
 {
 
+}
+
+string printVectorPairs(vector<pair<size_t, string>>::iterator iter1, vector<pair<size_t, string>>::iterator iter2)
+{
+	return string();
 }
