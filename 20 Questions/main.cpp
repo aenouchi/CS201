@@ -103,18 +103,32 @@ int main()
 						}
 					}
 				}
+
+				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+				{
+					cout << "Is it a Pig/Hog?\n" << endl;
+
+					cin >> input;
+
+					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+
+					{
+						cout << "I win! YOU LOSE\n" << endl;
+
+						exit;
+
+					}
+				}
 			}
 
+			else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+			{
+				cout << "Is your animal generally considered a pest? (yes/no)\n" << endl;
+
+				cin >> input;
+
+			}
 		}
-
-		else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
-		{
-			cout << "Is your animal generally considered a pest? (yes/no)\n" << endl;
-
-			cin >> input;
-
-		}
-	}
 		else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 		{
 			cout << "Is your animal a type of bird? (yes/no)\n" << endl;
@@ -122,6 +136,7 @@ int main()
 			cin >> input;
 
 		}
+	}
 
 
 
