@@ -52,7 +52,6 @@ int main()
 				}
 
 
-
 			}
 
 			else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -73,6 +72,8 @@ int main()
 
 						cin >> input;
 
+
+
 						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 
 						{
@@ -83,6 +84,23 @@ int main()
 						}
 
 
+
+					}
+
+					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+					{
+						cout << "Is it a Horse/Pony?\n" << endl;
+
+						cin >> input;
+
+						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+
+						{
+							cout << "I win! YOU LOSE\n" << endl;
+
+							exit;
+
+						}
 					}
 				}
 			}
