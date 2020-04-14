@@ -240,8 +240,6 @@ int main()
 
 				/*
 
-				cout << "Is it a Cat? (yes/no)\n" << endl;
-
 				cout << "Is your animal a type of bird? (yes/no)\n" << endl;
 
 				cout << "Is your animal used as the primary meat for the 'KFC' chain resturants? (yes/no)\n" << endl;
@@ -279,34 +277,6 @@ int main()
 				cout << "I win! YOU LOSE\n" << endl;
 
 				cout << "You win...Or cheated.\n" << endl;*/
-
-
-
-				/*if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-				{
-					cout << "Does your animal known for jumping? (yes/no)\n" << endl;
-
-					cin >> input;
-
-					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-					{
-						cout << "Does your animal known for jumping? (yes/no)\n" << endl;
-
-						cin >> input;
-
-						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-						{
-							cout << "Is it a Rabbit/Hare? (yes/no)\n" << endl;
-
-							cin >> input;
-
-							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-							{
-								cout << "I win! YOU LOSE\n" << endl;
-
-								exit;
-							}*/
-
 
 
 
