@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="asciiart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Image3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,5 +34,10 @@
     <None Include="parrot.ppm">
       <Filter>Source Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="parrot.png">
+      <Filter>Source Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

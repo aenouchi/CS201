@@ -138,7 +138,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="asciiart.cpp" />
     <ClCompile Include="Color3.cpp" />
     <ClCompile Include="Image3.cpp" />
   </ItemGroup>
@@ -148,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="parrot.ppm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="parrot.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
