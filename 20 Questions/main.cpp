@@ -146,13 +146,6 @@ int main()
 						}
 					}
 				}
-				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
-				{
-					cout << "Is your animal a type of bird? (yes/no)\n" << endl;
-
-					cin >> input;
-
-				}
 			}
 
 		}
@@ -220,6 +213,23 @@ int main()
 
 					}
 				}
+
+				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+				{
+					cout << "Is it a Cat? (yes/no)\n" << endl;
+
+					cin >> input;
+
+					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+					{
+						cout << "I win! YOU LOSE\n" << endl;
+
+						exit;
+
+					}
+
+				}
+
 			}
 		}
 
@@ -229,12 +239,6 @@ int main()
 
 
 				/*
-
-				cout << "Is it a Mouse/Rat? (yes/no)\n" << endl;
-
-				cout << "Does your animal bark? (yes/no)\n" << endl;
-
-				cout << "Is it a Dog? (yes/no)\n" << endl;
 
 				cout << "Is it a Cat? (yes/no)\n" << endl;
 
