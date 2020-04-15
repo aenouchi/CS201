@@ -232,6 +232,41 @@ int main()
 
 			}
 		}
+	}
+
+
+	else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+	{
+	cout << "Is your animal a type of bird? (yes/no)\n" << endl;
+
+		cin >> input;
+
+		if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+		{
+			cout << "Is your animal used as the primary meat for the 'KFC' chain resturants? (yes/no)\n" << endl;
+
+			cin >> input;
+
+			if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+			{
+				cout << "Is it a Chicken/Rooster? (yes/no)\n" << endl;
+
+				cin >> input;
+
+				if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+				{
+					cout << "I win! YOU LOSE\n" << endl;
+
+					exit;
+				}
+			}
+		}
+	}
+
+
+
+
+
 
 
 
@@ -240,7 +275,7 @@ int main()
 
 				/*
 
-				cout << "Is your animal a type of bird? (yes/no)\n" << endl;
+			
 
 				cout << "Is your animal used as the primary meat for the 'KFC' chain resturants? (yes/no)\n" << endl;
 
@@ -284,5 +319,4 @@ int main()
 				cout << "Do you want to play again? (yes/no)\n" << endl;
 
 				cin >> input;
-			}
 		}
