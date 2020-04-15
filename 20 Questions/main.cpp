@@ -312,14 +312,6 @@ int main()
 
 				/*
 
-			
-
-			
-
-				cout << "Is it a Bug (literally any type of insect)? (yes/no)\n" << endl;
-
-				cout << "You prick, are you seriously thinking of a Human? (yes/no)\n" << endl;
-
 				cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
 
 				cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
@@ -340,7 +332,7 @@ int main()
 
 				cout << "Is it an Owl? (yes/no)\n" << endl;
 
-				cout << "Is it a small wild bird (anytype)? (yes/no)\n" << endl;
+				cout << "Is it a small wild bird (any type)? (yes/no)\n" << endl;
 
 				cout << "I win! YOU LOSE\n" << endl;
 
