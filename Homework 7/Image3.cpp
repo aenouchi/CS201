@@ -21,6 +21,11 @@ const Color3& Image3::getPixel(unsigned x, unsigned y) const {
 	// BETTER OPTION 2: return a color
 	// Hint: maybe this is already in the class?
 
+	if ((y * w + x) >= (y + 1 * w) || (y * w + x) < 0)
+	{
+		std::cout << "ERROR: Pixel is out of bounds";
+	}
+
 	return pixels[y * w + x];
 }
 
