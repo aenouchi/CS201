@@ -3,6 +3,10 @@
 // Original Author: Jonathan Metzgar
 // CS 201 course
 #include "Image3.hpp"
+#include <string>
+#include <sstream>
+#include <fstream>
+
 
 // Image3 Constructor
 Image3::Image3(unsigned width, unsigned height) {
