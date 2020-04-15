@@ -7,6 +7,12 @@
 *April 14,2020
 */
 
+#include<iostream>
+#include <vector>
+#include <algorithm>
+#include <random>
+#include <vector>
+
 int main()
 {
 
