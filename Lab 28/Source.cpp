@@ -13,6 +13,17 @@
 #include <random>
 #include <vector>
 
+using std::ofstream;
+using std::cout;
+using std::endl;
+
+void tenprint()
+{
+	int count = 1;
+
+}
+
+
 int main()
 {
 
