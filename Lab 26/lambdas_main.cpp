@@ -19,7 +19,9 @@
 
 using std::vector;
 using std::pair;
-
+using std::string;
+using std::cout;
+using std::endl;
 
 
 int main() {
@@ -28,12 +30,18 @@ int main() {
 	//       Create a vector<pair<size_t, string>> to enumerate
 	//       each string in the WIKIPEDIA_CPP string vector.
 
+	vector<pair<size_t, string>> num(WIKIPEDIA_CPP.size());
+	for (size_t i = 0; i < WIKIPEDIA_CPP.size(); i++)
+	{
+		num[i].first = i;
+		num[i].second = WIKIPEDIA_CPP[i];
+	}
 
 
 	// TODO: REQUIRED
 	//       Use std::sort with a comparison lambda function that sorts
 	//       the vector pairs with the first member in descending order.
-
+	vector<pair<size_t, string>>::iterator it1 = numbered.begin();
 
 
 	// TODO: REQUIRED
