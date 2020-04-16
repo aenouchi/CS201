@@ -237,7 +237,7 @@ int main()
 
 	else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 	{
-	cout << "Is your animal a type of bird? (yes/no)\n" << endl;
+		cout << "Is your animal a type of bird? (yes/no)\n" << endl;
 
 		cin >> input;
 
@@ -261,138 +261,158 @@ int main()
 				}
 			}
 
-				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+			else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+			{
+				cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
+
+				cin >> input;
+
+
+				if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 				{
-					cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
+					cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
 
 					cin >> input;
 
-
 					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 					{
-						cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
+						cout << "Is it a Duck? (yes/no)\n" << endl;
 
 						cin >> input;
 
 						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 						{
-							cout << "Is it a Duck? (yes/no)\n" << endl;
+							cout << "I win! YOU LOSE\n" << endl;
 
-							cin >> input;
-
-							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-							{
-								cout << "I win! YOU LOSE\n" << endl;
-
-								exit;
-							}
+							exit;
 						}
-							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
-							{
-								cout << "Is it a Goose? (yes/no)\n" << endl;
+					}
+					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+					{
+						cout << "Is it a Goose? (yes/no)\n" << endl;
 
-								cin >> input;
+						cin >> input;
 
-								if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-								{
-									cout << "I win! YOU LOSE\n" << endl;
+						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+						{
+							cout << "I win! YOU LOSE\n" << endl;
 
-									exit;
-								}
-
-
-							}
-
+							exit;
 						}
 
 
 					}
 
-
-				
-	
-		}
-		else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
-		{
-			cout << "Is your animal bigger than a microwave? (yes/no)\n" << endl;
-
-			cin >> input;
-
-			if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-			{
-				cout << "You prick, are you seriously thinking of a Human? (yes/no)\n" << endl;
-
-				cin >> input;
-
-				if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
-				{
-					cout << "I win! YOU LOSE\n" << endl;
-
-					exit;
 				}
 
-			}
+				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+				{
+					cout << "Is your animal commonly eaten during Thanksgiving? (yes/no)\n" << endl;
 
+					cin >> input;
+
+					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+					{
+						cout << "Is it a Turkey? (yes/no)\n" << endl;
+
+						cin >> input;
+
+						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+						{
+							cout << "I win! YOU LOSE\n" << endl;
+
+							exit;
+						}
+
+
+					}
+
+				}
+
+
+			}
 			else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 			{
-				cout << "Is it a Bug (literally any type of Insect/Arachnid)? (yes/no)\n" << endl;
+				cout << "Is your animal bigger than a microwave? (yes/no)\n" << endl;
 
 				cin >> input;
 
 				if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 				{
-					cout << "I win! YOU LOSE\n" << endl;
+					cout << "You prick, are you seriously thinking of a Human? (yes/no)\n" << endl;
 
-					exit;
+					cin >> input;
+
+					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+					{
+						cout << "I win! YOU LOSE\n" << endl;
+
+						exit;
+					}
+
 				}
+
+				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+				{
+					cout << "Is it a Bug (literally any type of Insect/Arachnid)? (yes/no)\n" << endl;
+
+					cin >> input;
+
+					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+					{
+						cout << "I win! YOU LOSE\n" << endl;
+
+						exit;
+					}
+				}
+
+
 			}
-
-		
 		}
+
+
+
+
+
+
+
+
+
+
+
+		/*
+
+		cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
+
+		cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
+
+		cout << "Is it a Duck? (yes/no)\n" << endl;
+
+		cout << "Is it a Goose? (yes/no)\n" << endl;
+
+		cout << "Is your animal commonly eaten during Thanksgiving? (yes/no)\n" << endl;
+
+		cout << "Is it a Turkey? (yes/no)\n" << endl;
+
+		cout << "Is your animal almost exclusivly black? (yes/no)\n" << endl;
+
+		cout << "Is it a Crow/Raven? (yes/no)\n" << endl;
+
+		cout << "Does your animal make a sound that sounds similar to the English word 'who'? (yes/no)\n" << endl;
+
+		cout << "Is it an Owl? (yes/no)\n" << endl;
+
+		cout << "Is it a small wild bird (any type)? (yes/no)\n" << endl;
+
+		cout << "I win! YOU LOSE\n" << endl;
+
+		cout << "You win...Or cheated.\n" << endl;*/
+
+
+
+
+		cout << "Do you want to play again? (yes/no)\n" << endl;
+
+		cin >> input;
 	}
-
-
-
-
-
-
-
-
-
-
-
-				/*
-
-				cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
-
-				cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
-
-				cout << "Is it a Duck? (yes/no)\n" << endl;
-
-				cout << "Is it a Goose? (yes/no)\n" << endl;
-
-				cout << "Is your animal commonly eaten during Thanksgiving? (yes/no)\n" << endl;
-
-				cout << "Is it a Turkey? (yes/no)\n" << endl;
-
-				cout << "Is your animal almost exclusivly black? (yes/no)\n" << endl;
-
-				cout << "Is it a Crow/Raven? (yes/no)\n" << endl;
-
-				cout << "Does your animal make a sound that sounds similar to the English word 'who'? (yes/no)\n" << endl;
-
-				cout << "Is it an Owl? (yes/no)\n" << endl;
-
-				cout << "Is it a small wild bird (any type)? (yes/no)\n" << endl;
-
-				cout << "I win! YOU LOSE\n" << endl;
-
-				cout << "You win...Or cheated.\n" << endl;*/
-
-
-
-
-				cout << "Do you want to play again? (yes/no)\n" << endl;
-
-				cin >> input;
-		}
+}
