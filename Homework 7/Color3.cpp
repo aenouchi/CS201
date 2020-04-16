@@ -66,7 +66,7 @@ std::ostream& operator<<(std::ostream& ostr, const Color3& color) {
 
 std::istream& operator>>(std::istream& istr, Color3& color) {
 	// Implement your own input for a Color3
-
+	
 	
 
 	return istr;

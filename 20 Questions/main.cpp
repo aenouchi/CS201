@@ -15,7 +15,7 @@ using std::string;
 int main()
 {
 	cout << " Think of a common animal you would find on a farm. \n" << endl;
-	cout << "I will try to guess the animal within ten questions. \n" << endl;
+	cout << "I will try to guess the animal within ten questions. (To give up, just type 'end') \n" << endl;
 
 	cout << "Does your animal typically walk on four legs? (yes/no)\n" << endl;
 
@@ -260,6 +260,40 @@ int main()
 					exit;
 				}
 			}
+
+				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+				{
+					cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
+
+					cin >> input;
+
+
+					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+					{
+						cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
+
+						cin >> input;
+
+						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+						{
+							cout << "Is it a Duck? (yes/no)\n" << endl;
+
+							cin >> input;
+
+							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+							{
+								cout << "I win! YOU LOSE\n" << endl;
+
+								exit;
+							}
+						}
+
+
+					}
+
+
+				}
+	
 		}
 		else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 		{
