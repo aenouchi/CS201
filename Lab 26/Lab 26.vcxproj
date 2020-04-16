@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lambdas.cpp" />
+    <ClCompile Include="lambdas_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lambdas.hpp" />

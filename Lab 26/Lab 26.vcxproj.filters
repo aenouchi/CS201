@@ -18,6 +18,9 @@
     <ClCompile Include="lambdas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lambdas_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lambdas.hpp">

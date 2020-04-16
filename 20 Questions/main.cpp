@@ -382,18 +382,6 @@ int main()
 
 		/*
 
-		cout << "Does your animal have webbed feet? (yes/no)\n" << endl;
-
-		cout << "Is your animal used as a model for a popular rubber bath toy? (yes/no)\n" << endl;
-
-		cout << "Is it a Duck? (yes/no)\n" << endl;
-
-		cout << "Is it a Goose? (yes/no)\n" << endl;
-
-		cout << "Is your animal commonly eaten during Thanksgiving? (yes/no)\n" << endl;
-
-		cout << "Is it a Turkey? (yes/no)\n" << endl;
-
 		cout << "Is your animal almost exclusivly black? (yes/no)\n" << endl;
 
 		cout << "Is it a Crow/Raven? (yes/no)\n" << endl;
