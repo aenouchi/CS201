@@ -22,6 +22,7 @@ using std::pair;
 using std::string;
 using std::cout;
 using std::endl;
+using std::sort;
 
 
 int main() {
@@ -41,11 +42,15 @@ int main() {
 	// TODO: REQUIRED
 	//       Use std::sort with a comparison lambda function that sorts
 	//       the vector pairs with the first member in descending order.
-	vector<pair<size_t, string>>::iterator it1 = numbered.begin();
+	vector<pair<size_t, string>>::iterator it1 = num.begin();
+	vector<pair<size_t, string>>::iterator it2 = num.end();
+	sort(it1, it2, [](auto& x, auto& y) {return x.first > y.first; });
+
 
 
 	// TODO: REQUIRED
 	//       Use printVectorPairs() to print the vector
+	cout << "Sorted by descending INT: " << printVectorPairs(it1, it2);
 
 
 
