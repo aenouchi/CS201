@@ -70,13 +70,16 @@ int main() {
 	//       Use std::find_if with a comparison lambda function that prints
 	//       the vector pairs where the pair's second.length() > 15.
 	//       Print the vector as described in the lab.
-	/*cout << "" << endl;
-	while (wiki1 != wiki2)
-	{
-		auto find = 
-	}
-
-
-
-	return 0;*/
+	
+//	cout << "Words with less than 15 characters:" << endl;
+//	while (wiki1 != wiki2)
+//	{
+//		auto find = find_if(wiki1, wiki2, [](auto& x) {return x > 15;});
+//		cout << find->second << endl;
+//		wiki1++;
+//	}
+//
+//
+//
+//	return 0;
 }
