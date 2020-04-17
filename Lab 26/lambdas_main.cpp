@@ -23,7 +23,7 @@ using std::string;
 using std::cout;
 using std::endl;
 using std::sort;
-
+using std::find_if;
 
 int main() {
 
@@ -32,45 +32,51 @@ int main() {
 	//       each string in the WIKIPEDIA_CPP string vector.
 
 	vector<pair<size_t, string>> num(WIKIPEDIA_CPP.size());
-	for (size_t i = 0; i < WIKIPEDIA_CPP.size(); i++)
+	for (size_t z = 0; z < WIKIPEDIA_CPP.size(); z++)
 	{
-		num[i].first = i;
-		num[i].second = WIKIPEDIA_CPP[i];
+		num[z].first = z;
+		num[z].second = WIKIPEDIA_CPP[z];
 	}
 
 
 	// TODO: REQUIRED
 	//       Use std::sort with a comparison lambda function that sorts
 	//       the vector pairs with the first member in descending order.
-	vector<pair<size_t, string>>::iterator it1 = num.begin();
-	vector<pair<size_t, string>>::iterator it2 = num.end();
-	sort(it1, it2, [](auto& x, auto& y) {return x.first > y.first; });
+	vector<pair<size_t, string>>::iterator wiki1 = num.begin();
+	vector<pair<size_t, string>>::iterator wiki2 = num.end();
+	sort(wiki1, wiki2, [](auto& x, auto& y) {return x.first > y.first; });
 
 
 
 	// TODO: REQUIRED
 	//       Use printVectorPairs() to print the vector
-	cout << "Sorted by descending INT: " << printVectorPairs(it1, it2);
+	cout << "Sorted by descending INT: " << printVectorPairs(wiki1, wiki2);
 
 
 
 	// TODO: ADDITIONAL 1
 	//       Use std::sort with a comparison lambda function that sorts
 	//       the vector pairs with the second member in ascending order.
+	sort(wiki1, wiki2, [](auto& x, auto& y) {return x.second < y.second; });
 
 
 
 	// TODO: ADDITIONAL 1
 	//       Use printVectorPairs() to print the vector
-
+	cout << "Sorted by Ascending String: " << printVectorPairs(wiki1, wiki2) << endl;
 
 
 	// TODO: ADDITIONAL 2
 	//       Use std::find_if with a comparison lambda function that prints
 	//       the vector pairs where the pair's second.length() > 15.
 	//       Print the vector as described in the lab.
+	/*cout << "" << endl;
+	while (wiki1 != wiki2)
+	{
+		auto find = 
+	}
 
 
 
-	return 0;
+	return 0;*/
 }
