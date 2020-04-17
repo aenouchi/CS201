@@ -25,7 +25,7 @@ Color3::Color3(int R, int G, int B) {
 int Color3::weightedSum() const {
 	// Implement Y = 0.2126R + 0.7152G + 0.0722B
 	// Ensure values are inside the range 0 to 255
-	if (r > 255 || r < 0)
+	/*if (r > 255 || r < 0)
 	{
 		r == 255;
 		std::cout << "Error with r";
@@ -41,9 +41,9 @@ int Color3::weightedSum() const {
 		std::cout << "Error with b";
 	}
 
-	int y = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+	int y = 0.2126 * r + 0.7152 * g + 0.0722 * b;*/
 
-	return y;
+	return 0;
 }
 
 char Color3::asciiValue() const {
@@ -51,7 +51,7 @@ char Color3::asciiValue() const {
 	// or light to dark and then map the weightedSum() to the range
 	// 0 to 15. Please pick your own characters
 	const char values[] = "%XYHVQDOL+>*^-.";
-	unsigned darkness = weightedSum();
+	unsigned darkness = 0;
 	return values[darkness];
 }
 
