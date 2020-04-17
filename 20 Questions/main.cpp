@@ -91,6 +91,14 @@ int main()
 
 						}
 
+						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+						{
+							cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+							exit;
+
+						}
+
 
 
 					}
@@ -105,6 +113,14 @@ int main()
 
 						{
 							cout << "I win! YOU LOSE\n" << endl;
+
+							exit;
+
+						}
+
+						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+						{
+							cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
 
 							exit;
 
@@ -132,6 +148,14 @@ int main()
 							exit;
 						}
 
+						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+						{
+							cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+							exit;
+
+						}
+
 					}
 					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 					{
@@ -151,6 +175,15 @@ int main()
 
 								exit;
 							}
+
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+								exit;
+
+							}
+
 						}
 
 						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -171,6 +204,14 @@ int main()
 
 									exit;
 								}
+
+								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+								{
+									cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+									exit;
+
+								}
 							}
 
 								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -186,6 +227,14 @@ int main()
 										exit;
 									}
 
+									else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+									{
+										cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+										exit;
+
+									}
+
 								}
 							
 
@@ -194,13 +243,6 @@ int main()
 
 					}
 
-						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
-						{
-							cout << "Does your animal bark? (yes/no)\n" << endl;
-
-							cin >> input;
-
-						}
 					
 				}
 			}
@@ -230,6 +272,14 @@ int main()
 
 						exit;
 					}
+
+					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+					{
+						cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+						exit;
+
+					}
 				}
 
 				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -249,13 +299,21 @@ int main()
 						{
 							cout << "Is it a Mole? (yes/no)\n" << endl;
 
-								cin >> input;
+							cin >> input;
 
 							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 							{
 								cout << "I win! YOU LOSE\n" << endl;
 
 								exit;
+							}
+
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+								exit;
+
 							}
 						}
 
@@ -273,9 +331,17 @@ int main()
 								exit;
 							}
 
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
 
+								exit;
+
+							}
+
+
+						}
 					}
-				}
 
 					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 					{
@@ -290,10 +356,17 @@ int main()
 
 							exit;
 						}
+
+						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+						{
+							cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+							exit;
+
+						}
 					}
-
+				}
 			}
-
 			else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 			{
 				cout << "Does your animal bark? (yes/no)\n" << endl;
@@ -313,27 +386,46 @@ int main()
 						exit;
 
 					}
-				}
 
-				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
-				{
-					cout << "Is it a Cat? (yes/no)\n" << endl;
-
-					cin >> input;
-
-					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 					{
-						cout << "I win! YOU LOSE\n" << endl;
+						cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
 
 						exit;
 
 					}
 
 				}
-
 			}
 		}
-	}
+			
+
+
+						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+						{
+							cout << "Is it a Cat? (yes/no)\n" << endl;
+
+							cin >> input;
+
+							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+							{
+								cout << "I win! YOU LOSE\n" << endl;
+
+								exit;
+
+							}
+
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+								exit;
+
+							}
+						}
+					}
+				
+	
 
 
 		else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -359,6 +451,14 @@ int main()
 						cout << "I win! YOU LOSE\n" << endl;
 
 						exit;
+					}
+
+					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+					{
+						cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+						exit;
+
 					}
 				}
 
@@ -387,6 +487,14 @@ int main()
 
 								exit;
 							}
+
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+								exit;
+
+							}
 						}
 						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 						{
@@ -400,6 +508,15 @@ int main()
 
 								exit;
 							}
+
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+								exit;
+
+							}
+
 
 
 						}
@@ -425,6 +542,14 @@ int main()
 								exit;
 							}
 
+							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+							{
+								cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+								exit;
+
+							}
+
 
 						}
 
@@ -445,6 +570,14 @@ int main()
 									cout << "I win! YOU LOSE\n" << endl;
 
 									exit;
+								}
+
+								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+								{
+									cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+									exit;
+
 								}
 
 							}
@@ -468,6 +601,14 @@ int main()
 										exit;
 									}
 
+									else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+									{
+										cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+										exit;
+
+									}
+
 								}
 
 								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -482,6 +623,14 @@ int main()
 										cout << "I win! YOU LOSE\n" << endl;
 
 										exit;
+									}
+
+									else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+									{
+										cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+										exit;
+
 									}
 
 								}
@@ -512,6 +661,14 @@ int main()
 									exit;
 								}
 
+								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+								{
+									cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+									exit;
+
+								}
+
 							}
 
 							else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -527,34 +684,30 @@ int main()
 									exit;
 								}
 
+								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+								{
+									cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+									exit;
+
+								}
+
 							}
 
 
 						}
 					}
 				}
-
-
-
-
-
-
-
-
-
-
-
-				/*
-
-				cout << "I have no animal with that description, You win...Or cheated.\n" << endl;*/
-
-
 	}
 		}
-	}
 
 				cout << "Do you want to play again? (yes/no)\n" << endl;
 
 				cin >> input;
+
+				if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+				{
+					main();
+				}
 		
 }
