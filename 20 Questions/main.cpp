@@ -88,7 +88,7 @@ int main()
 
 					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 					{
-						cout << "Is it a Horse/Pony?\n" << endl;
+						cout << "Is it a Horse/Pony? (yes/no)\n" << endl;
 
 						cin >> input;
 
@@ -105,14 +105,14 @@ int main()
 
 				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 				{
-					cout << "Is your animal used to make bacon ? (yes / no)\n" << endl;
+					cout << "Is your animal used to make bacon? (yes / no)\n" << endl;
 
 					cin >> input;
 
 					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 
 					{
-						cout << "Is it a Pig/Hog?" << endl;
+						cout << "Is it a Pig/Hog? (yes / no)\n" << endl;
 
 						cin >> input;
 
@@ -126,13 +126,13 @@ int main()
 					}
 					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 					{
-						cout << "Does your animal 'Moo'?" << endl;
+						cout << "Does your animal 'Moo'? (yes / no)\n" << endl;
 
 						cin >> input;
 
 						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 						{
-							cout << "Is it a Cow/Bull?" << endl;
+							cout << "Is it a Cow/Bull? (yes / no)\n" << endl;
 
 							cin >> input;
 
@@ -146,13 +146,13 @@ int main()
 
 						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 						{
-							cout << "Does your animal produce wool?\n" << endl;
+							cout << "Does your animal produce wool? (yes / no)\n" << endl;
 
 							cin >> input;
 
 							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 							{
-								cout << "Is it a Sheep?\n" << endl;
+								cout << "Is it a Sheep? (yes / no)\n" << endl;
 
 								cin >> input;
 
@@ -166,7 +166,7 @@ int main()
 
 								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 								{
-									cout << "Is it a Goat?\n" << endl;
+									cout << "Is it a Goat? (yes / no)\n" << endl;
 
 									cin >> input;
 
