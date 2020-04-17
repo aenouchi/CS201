@@ -42,28 +42,28 @@ int main() {
 	// TODO: REQUIRED
 	//       Use std::sort with a comparison lambda function that sorts
 	//       the vector pairs with the first member in descending order.
-	vector<pair<size_t, string>>::iterator wiki1 = num.begin();
-	vector<pair<size_t, string>>::iterator wiki2 = num.end();
-	sort(wiki1, wiki2, [](auto& x, auto& y) {return x.first > y.first; });
+	vector<pair<size_t, string>>::iterator iter1 = num.begin();
+	vector<pair<size_t, string>>::iterator iter2 = num.end();
+	sort(iter1, iter2, [](auto& x, auto& y) {return x.first > y.first; });
 
 
 
 	// TODO: REQUIRED
 	//       Use printVectorPairs() to print the vector
-	cout << "Sorted by descending INT: " << printVectorPairs(wiki1, wiki2);
+	cout << "Sorted by descending INT: " << printVectorPairs(iter1, iter2);
 
 
 
 	// TODO: ADDITIONAL 1
 	//       Use std::sort with a comparison lambda function that sorts
 	//       the vector pairs with the second member in ascending order.
-	sort(wiki1, wiki2, [](auto& x, auto& y) {return x.second < y.second; });
+	sort(iter1, iter2, [](auto& x, auto& y) {return x.second < y.second; });
 
 
 
 	// TODO: ADDITIONAL 1
 	//       Use printVectorPairs() to print the vector
-	cout << "Sorted by Ascending String: " << printVectorPairs(wiki1, wiki2) << endl;
+	cout << "Sorted by Ascending String: " << printVectorPairs(iter1, iter2) << endl;
 
 
 	// TODO: ADDITIONAL 2
@@ -71,15 +71,12 @@ int main() {
 	//       the vector pairs where the pair's second.length() > 15.
 	//       Print the vector as described in the lab.
 	
-//	cout << "Words with less than 15 characters:" << endl;
-//	while (wiki1 != wiki2)
-//	{
-//		auto find = find_if(wiki1, wiki2, [](auto& x) {return x > 15;});
-//		cout << find->second << endl;
-//		wiki1++;
-//	}
-//
-//
-//
-//	return 0;
+	cout << "Words with less than 15 characters:" << endl;
+	while (iter1 != iter2)
+	{
+		auto find = find_if(iter1, iter2, [](auto& x) {return x > 15;});
+		cout << find->second << endl;
+		iter1++;
+	}
+	return 0;
 }
