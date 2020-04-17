@@ -53,6 +53,13 @@ int main()
 
 				}
 
+				else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+				{
+					cout << "I have no animal with that description, You win...Or you cheated.\n" << endl;
+
+					exit;
+
+				}
 			}
 
 			else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
@@ -539,7 +546,7 @@ int main()
 
 				/*
 
-				cout << "You win...Or cheated.\n" << endl;*/
+				cout << "I have no animal with that description, You win...Or cheated.\n" << endl;*/
 
 
 	}
