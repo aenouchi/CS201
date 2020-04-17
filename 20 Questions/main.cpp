@@ -15,7 +15,7 @@ using std::string;
 int main()
 {
 	cout << " Think of a common animal you would find on a farm. \n" << endl;
-	cout << "I will try to guess the animal within ten questions. (To give up, just type 'end') \n" << endl;
+	cout << "I will try to guess the animal within ten questions. (Typing anything other than given options is disqualification) \n" << endl;
 
 	cout << "Does your animal typically walk on four legs? (yes/no)\n" << endl;
 
@@ -37,7 +37,7 @@ int main()
 
 			if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 			{
-				cout << "Is it a Mule?\n" << endl;
+				cout << "Is it a Mule? (yes/no)\n" << endl;
 
 				cin >> input;
 
@@ -67,7 +67,7 @@ int main()
 
 					if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 					{
-						cout << "Is it a Donkey/Jackass?\n" << endl;
+						cout << "Is it a Donkey/Jackass? (yes/no)\n" << endl;
 
 						cin >> input;
 
@@ -126,16 +126,64 @@ int main()
 					}
 					else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 					{
-						cout << "Is it a Cow/Bull?" << endl;
+						cout << "Does your animal 'Moo'?" << endl;
 
 						cin >> input;
 
 						if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
 						{
-							cout << "I win! YOU LOSE\n" << endl;
+							cout << "Is it a Cow/Bull?" << endl;
 
-							exit;
+							cin >> input;
+
+							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+							{
+								cout << "I win! YOU LOSE\n" << endl;
+
+								exit;
+							}
 						}
+
+						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+						{
+							cout << "Does your animal produce wool?\n" << endl;
+
+							cin >> input;
+
+							if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+							{
+								cout << "Is it a Sheep?\n" << endl;
+
+								cin >> input;
+
+								if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+								{
+									cout << "I win! YOU LOSE\n" << endl;
+
+									exit;
+								}
+							}
+
+								else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
+								{
+									cout << "Is it a Goat?\n" << endl;
+
+									cin >> input;
+
+									if (input == "yes" || input == "YES" || input == "Yes" || input == "y" || input == "Y")
+									{
+										cout << "I win! YOU LOSE\n" << endl;
+
+										exit;
+									}
+
+								}
+							
+
+
+						}
+
+					}
 
 						else if (input == "no" || input == "NO" || input == "No" || input == "n" || input == "N")
 						{
@@ -144,7 +192,7 @@ int main()
 							cin >> input;
 
 						}
-					}
+					
 				}
 			}
 
