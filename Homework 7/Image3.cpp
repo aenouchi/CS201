@@ -107,7 +107,9 @@ std::istream& operator>>(std::istream& istr, Image3& image) {
 	}
 	image.pixels.clear(); // Empty the vector to add our data to.
 
-	bool widthSet, heightSet, colorspaceSet = false;
+	bool widthSet = false;
+	bool heightSet = false;
+	bool colorspaceSet = false;
 
 	vector<int> rgb;
 
