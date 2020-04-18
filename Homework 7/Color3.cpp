@@ -25,25 +25,7 @@ Color3::Color3(int R, int G, int B) {
 int Color3::weightedSum() const {
 	// Implement Y = 0.2126R + 0.7152G + 0.0722B
 	// Ensure values are inside the range 0 to 255
-	/*if (r > 255 || r < 0)
-	{
-		r == 255;
-		std::cout << "Error with r";
-	}
-	if (g > 255 || b < 0)
-	{
-		g == 255;
-		std::cout << "Error with g";
-	}
-	if (b > 255 || b < 0)
-	{
-		b == 255;
-		std::cout << "Error with b";
-	}
-
-	int y = 0.2126 * r + 0.7152 * g + 0.0722 * b;*/
-
-	return 0;
+	return saturate(0.2126 * r + 0.7152 * g + 0.0722 * b, 255);
 }
 
 char Color3::asciiValue() const {
