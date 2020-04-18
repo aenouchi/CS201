@@ -1,5 +1,5 @@
 /**
-*mandelbrot.cpp
+*rule30.cpp
 *Homework 7
 *Aaron Nouchi
 *CS 201
@@ -8,11 +8,12 @@
 */
 
 #include <iostream>
-#include "Color3.hpp"
-#include "Image3.hpp"
 using std::cout;
 using std::endl;
 using std::cin;
+
+using std::ifstream;
+using std::ofstream;
 
 int main()
 {

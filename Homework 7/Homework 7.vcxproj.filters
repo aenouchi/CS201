@@ -21,7 +21,7 @@
     <ClCompile Include="Color3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mandelbrot.cpp">
+    <ClCompile Include="rule30.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Color3.cpp" />
     <ClCompile Include="Image3.cpp" />
-    <ClCompile Include="mandelbrot.cpp" />
+    <ClCompile Include="rule30.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color3.hpp" />
