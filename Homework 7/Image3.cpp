@@ -65,10 +65,10 @@ bool Image3::loadPPM(const std::string& path) {
 	if (!fin) {
 		return false;
 	}
-	try {
+	try {//My friend suggested to do this
 		fin >> *this;
 	}
-	catch (...) {
+	catch (...) {//My friend suggested to do this
 		return false;
 	}
 	return true;
