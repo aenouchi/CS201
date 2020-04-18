@@ -23,7 +23,6 @@ int main()
 
     Image3 image(0, 0);
     if (image.loadPPM("parrot.ppm")) {
-        cout << "Image loaded!" << endl;
         image.printASCII(cout);
     }
 }
