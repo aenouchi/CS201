@@ -33,7 +33,7 @@ char Color3::asciiValue() const {
 	// or light to dark and then map the weightedSum() to the range
 	// 0 to 15. Please pick your own characters
 	const char values[] = "%XYHVQDOL+>*^-.";
-	unsigned darkness = 0;
+	unsigned darkness = 14 - (weightedSum() / 15) % 15;
 	return values[darkness];
 }
 
@@ -49,7 +49,14 @@ std::ostream& operator<<(std::ostream& ostr, const Color3& color) {
 std::istream& operator>>(std::istream& istr, Color3& color) {
 	// Implement your own input for a Color3
 	
-	
+	int r, g, b;
+	istr >> r;
+	istr >> g;
+	istr >> b;
+
+	color.r = saturate(r, 255);
+	color.g = saturate(g, 255);
+	color.b = saturate(b, 255);
 
 	return istr;
 }
