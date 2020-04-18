@@ -2,10 +2,18 @@
 // Implementation for Image3 class
 // Original Author: Jonathan Metzgar
 // CS 201 course
+#include <iostream>
 #include "Image3.hpp"
 #include <string>
 #include <sstream>
 #include <fstream>
+
+using std::string;
+using std::vector;
+using std::istringstream;
+using std::ifstream;
+using std::ofstream;
+
 
 
 // Image3 Constructor
@@ -15,7 +23,7 @@ Image3::Image3(unsigned width, unsigned height) {
 	w = width;
 	h = height;
 
-	pixels.resize(w * h);
+	pixels.resize(width * height);
 }
 
 // Return a pixel from the image
@@ -25,9 +33,9 @@ const Color3& Image3::getPixel(unsigned x, unsigned y) const {
 	// BETTER OPTION 2: return a color
 	// Hint: maybe this is already in the class?
 
-	if ((y * w + x) >= (y + 1 * w) || (y * w + x) < 0)
-	{
-		std::cout << "ERROR: Pixel is out of bounds";
+	if (y * w + x > pixels.size()) {
+
+		return pixels[0];
 	}
 
 	return pixels[y * w + x];
@@ -41,111 +49,38 @@ void Image3::setPixel(unsigned x, unsigned y, const Color3& color) {
 bool Image3::savePPM(const std::string& path) const {
 	// TODO: Save the image to the disk
 	// REQUIREMENT: Use the STREAM operators for the file contents
+	ofstream fout(path);
+	if (!fout) {
+		return false;
+	}
+	fout << *this;
+	fout.close();
 	return false;
 }
 
 bool Image3::loadPPM(const std::string& path) {
 	// TODO: Load an image from the disk
 	// REQUIREMENT: Use the STREAM operators for the file contents
-	std::ifstream fstr("parrot.ppm");
-	if (!fstr)
-	{
-		std::cout << "Error in image3: loadPPM";
+	ifstream fin(path);
+	if (!fin) {
 		return false;
 	}
-
-	//resize pixels accordingly
-	std::string s;
-
-	//skip first line
-	std::getline(fstr, s);
-	//we want dimensions from second line
-	std::getline(fstr, s);
-
-	std::stringstream ss;
-	ss << s;
-
-	int x, y;
-
-	int mark;
-	for (int i = 0; i < s.size(); i++)
-	{
-		if (s[i] == ',')
-		{
-			mark = i;
-		}
-
-		break;
+	try {
+		fin >> *this;
 	}
-
-	//reading width
-	ss >> x;
-
-	//reading height
-	ss << s[mark, s.size()];
-	ss >> y;
-
-	Image3(x, y);
-
-	//now that dimensions have been read and set accordingly, we set the pixels
-	std::string rgb;
-	int r2;
-	int g2;
-	int b2;
-
-	for (int i = 2; i < pixels.size(); i++)
-	{
-		if (fstr.eof())
-		{
-			break;
-		}
-
-		std::getline(fstr, rgb);
-
-		//finding RGB values
-		ss << rgb;
-		ss >> r2; //red
-
-		//finding spaces, so we can take other numbers
-		int m1 = -32;
-		int m2;
-		for (int j = 0; j < rgb.size(); j++)
-		{
-			if (rgb[j] = ' ')
-			{
-				m1 = i;
-			}
-			if (rgb[j] = ' ' && m1 != -32)
-			{
-				m2 = i;
-			}
-		}
-
-		ss << rgb[m1, m2];
-		ss >> g2; //green
-
-		ss << rgb[m2, rgb.size()];
-		ss >> b2; //blue
-
-
-		//set pixel to colors
-		Color3 nVal(r2, g2, b2);
-		pixels[i] = nVal;
+	catch (...) {
+		return false;
 	}
-
 	return true;
 }
 
 void Image3::printASCII(std::ostream& ostr) const {
 	// TODO: Print an ASCII version of this image
 
-	for (int i = 0; i < pixels.size(); i++)
-	{
-		std::cout << pixels[i].asciiValue();
-
-		if (i + 1 % w == 0)
-		{
-			std::cout << std::endl;
+	for (std::size_t i = 0; i < pixels.size(); i++) {
+		ostr << pixels[i].asciiValue();
+		if (i != 0 && (i + 1) % w == 0) {
+			ostr << '\n';
 		}
 	}
 }
@@ -155,14 +90,58 @@ void Image3::printASCII(std::ostream& ostr) const {
 std::ostream& operator<<(std::ostream& ostr, const Image3& image) {
 	// TODO: Write out PPM image format to stream
 	// ASSUME FORMAT WILL BE GOOD
-
-
-
-	return ostr;
-}
+		ostr << "P3\n" << image.w << ' ' << image.h << "\n255";
+		for (Color3 px : image.pixels) {
+			ostr << '\n' << px;
+		}
+		return ostr;
+	}
 
 std::istream& operator>>(std::istream& istr, Image3& image) {
 	// TODO: Read in PPM image format from stream
 	// MAKE SURE FORMAT IS GOOD!!!
+	string line;
+	istr >> line;
+	if (line != "P3") { // Invalid format
+		throw;
+	}
+	image.pixels.clear(); // Empty the vector to add our data to.
+
+	bool widthSet, heightSet, colorspaceSet = false;
+
+	vector<int> rgb;
+
+	while (true) {
+		std::getline(istr, line);
+		if (!istr) {
+			break;
+		}
+		if (line[0] == '#' || line == "") continue;
+		istringstream str(line);
+		while (str) {
+			int value;
+			str >> value;
+			if (!str) break;
+			if (!widthSet) {
+				widthSet = true;
+				image.w = value;
+				continue;
+			}
+			if (!heightSet) {
+				heightSet = true;
+				image.h = value;
+				continue;
+			}
+			if (!colorspaceSet) {
+				colorspaceSet = true;
+				continue;
+			}
+			rgb.push_back(value);
+			if (rgb.size() == 3) {
+				image.pixels.push_back(Color3(rgb[0], rgb[1], rgb[2]));
+				rgb.clear();
+			}
+		}
+	}
 	return istr;
 }
