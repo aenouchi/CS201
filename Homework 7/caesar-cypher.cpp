@@ -79,5 +79,15 @@ string code(string text, int change)
 		index = letters.find(text[i]);
 
 		if (text[i] == empty)
+			continue;
+
+		if (index == string::npos) 
+		{
+			index = capital.find(text[i]);
+
+			if (index + change > capital.size() - 1) { 
+				index = (index + change) - capital.size();
+				text[i] = capital[index];
+				continue;
 
 }
