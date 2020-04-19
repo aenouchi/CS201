@@ -34,6 +34,15 @@ int main()
 	cout << "Input text to be decrypted using Caesar Cypher" << endl;
 	cout << "Press 'Enter' to end" << endl;
 
+	std::string errors = "0123456789"; 
+	x = find_first_of(text.begin(), text.end(), errors.begin(), errors.end());
 
+
+	while (x != text.end()) 
+	{ 
+		cout << "Please don't include numbers or symbols in the message." << endl;;
+		getline(cin, text);
+		x = find_first_of(text.begin(), text.end(), errors.begin(), errors.end()); // Checks again
+	}
 
 }
