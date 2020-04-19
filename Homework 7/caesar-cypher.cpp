@@ -61,5 +61,9 @@ int main()
 		cin >> change;
 	}
 
+	cout << "Results: " << code(text, change);
+
+	return 0;
+}
 
 }
