@@ -57,7 +57,7 @@ int main()
 	cin >> change;
 
 	while (!cin) {
-		cout << "" << endl;
+		cout << "ERROR: Only Ints" << endl;
 		cin >> change;
 	}
 
