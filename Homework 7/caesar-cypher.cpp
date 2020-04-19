@@ -25,14 +25,15 @@ using std::find_first_of;
 
 int main()
 {
+	
+	cout << "Input text to be decrypted using Caesar Cypher (Use ONLY letters)" << endl;
+	cout << "Press 'Enter' to end" << endl;
+
 	string code(string text, int shift);
 	string::iterator x;
 
 	string text;
 	getline(cin, text);
-
-	cout << "Input text to be decrypted using Caesar Cypher (Use ONLY letters)" << endl;
-	cout << "Press 'Enter' to end" << endl;
 
 	std::string errors = "0123456789"; 
 	x = find_first_of(text.begin(), text.end(), errors.begin(), errors.end());
@@ -106,3 +107,17 @@ string code(string text, int change)
 				continue;
 			}
 		}
+
+		if (index + change > letters.size() - 1) 
+		{
+			index = (index + change) - letters.size();
+			text[i] = letters[index];
+			continue;
+		}
+
+		else {
+			text[i] = letters[index + change];
+		}
+	}
+	return text;
+}
