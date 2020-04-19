@@ -48,7 +48,7 @@ int main()
 	string empty = " ";
 	if (text.empty() || text == empty) 
 	{ 
-		cout << "Program closed" << endl;
+		cout << "Program End" << endl;
 		return 0;
 	}
 
