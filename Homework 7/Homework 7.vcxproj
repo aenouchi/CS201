@@ -22,8 +22,6 @@
     <ClCompile Include="caesar-cypher.cpp" />
     <ClCompile Include="Color3.cpp" />
     <ClCompile Include="Image3.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mandelbrot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color3.hpp" />

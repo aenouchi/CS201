@@ -21,12 +21,6 @@
     <ClCompile Include="Color3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mandelbrot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="caesar-cypher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
