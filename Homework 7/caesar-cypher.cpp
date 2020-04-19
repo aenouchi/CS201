@@ -52,5 +52,14 @@ int main()
 		return 0;
 	}
 
+	int change;
+	cout << "How much do you want to shift the characters (ints ONLY) ";
+	cin >> change;
+
+	while (!cin) {
+		cout << "" << endl;
+		cin >> change;
+	}
+
 
 }
