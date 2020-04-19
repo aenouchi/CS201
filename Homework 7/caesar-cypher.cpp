@@ -23,5 +23,10 @@ using std::ofstream;
 
 int main()
 {
+	string code(string text, int shift);
+
+	cout << "Input text to be decrypted using Caesar Cypher" << endl;
+	cout << "Press 'Enter' to end" << endl;
+
 
 }
