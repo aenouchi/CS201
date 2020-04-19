@@ -18,15 +18,22 @@ using std::endl;
 using std::cin;
 using std::string;
 using std::vector;
+using std::getline;
 using std::ifstream;
 using std::ofstream;
+using std::find_first_of;
 
 int main()
 {
 	string code(string text, int shift);
+	string::iterator x;
+
+	string text;
+	getline(cin, text);
 
 	cout << "Input text to be decrypted using Caesar Cypher" << endl;
 	cout << "Press 'Enter' to end" << endl;
+
 
 
 }
