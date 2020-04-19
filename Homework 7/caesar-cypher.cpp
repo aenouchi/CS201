@@ -31,7 +31,7 @@ int main()
 	string text;
 	getline(cin, text);
 
-	cout << "Input text to be decrypted using Caesar Cypher" << endl;
+	cout << "Input text to be decrypted using Caesar Cypher (Use ONLY letters)" << endl;
 	cout << "Press 'Enter' to end" << endl;
 
 	std::string errors = "0123456789"; 
@@ -40,9 +40,17 @@ int main()
 
 	while (x != text.end()) 
 	{ 
-		cout << "Please don't include numbers or symbols in the message." << endl;;
+		cout << "Error: Bad character entered " << endl;;
 		getline(cin, text);
 		x = find_first_of(text.begin(), text.end(), errors.begin(), errors.end()); // Checks again
 	}
+
+	string empty = " ";
+	if (text.empty() || text == empty) 
+	{ 
+		cout << "Program closed" << endl;
+		return 0;
+	}
+
 
 }
