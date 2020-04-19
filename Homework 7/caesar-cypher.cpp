@@ -66,4 +66,18 @@ int main()
 	return 0;
 }
 
+string code(string text, int change) 
+{ 
+	string letters = "abcdefghijklmnopqrstuvwxyz"; 
+	string capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+	char empty = ' '; 
+	size_t index;
+
+	for (size_t i = 0; i < text.size(); i++) 
+	{ 
+		index = letters.find(text[i]);
+
+		if (text[i] == empty)
+
 }
