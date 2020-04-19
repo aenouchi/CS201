@@ -25,7 +25,6 @@ using std::find_first_of;
 
 int main()
 {
-	
 	cout << "Input text to be decrypted using Caesar Cypher (Use ONLY letters)" << endl;
 	cout << "Press 'Enter' to end" << endl;
 
