@@ -90,4 +90,19 @@ string code(string text, int change)
 				text[i] = capital[index];
 				continue;
 
-}
+			}
+			else if (index == std::string::npos)
+			{
+				continue;
+			}
+			else 
+			{ 
+				text[i] = capital[index + change];
+				continue;
+			}
+
+			if (index == string::npos)
+			{
+				continue;
+			}
+		}
