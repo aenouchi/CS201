@@ -45,8 +45,18 @@ void mandelbrot(Image3& image) {
 	int w = (int)image.w; //width
 	int h = (int)image.h;// height
 
+	for (int i = 0; i < w; i++) 
+	{
+		for (int j = 0; j < h; j++) 
+		{
 
+			int x = i;
+			int y = j;
 			
+			double x0 = ((double)x / (double)w) * 3.5 - 2.5;
+
+			double y0 = ((double)y / (double)h) * 2 - 1;
+
 
 	int main();
 {
