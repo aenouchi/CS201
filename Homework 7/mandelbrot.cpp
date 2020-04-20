@@ -8,10 +8,18 @@
 */
 
 #include <iostream>
+#include <vector>
+#include "Color3.hpp"
+#include "Image3.hpp"
+#include <cmath>
+#include <fstream>
+#include <sstream>
+
 using std::cout;
 using std::endl;
 using std::cin;
-
+using std::vector;
+using std::string;
 using std::ifstream;
 using std::ofstream;
 
