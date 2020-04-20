@@ -57,6 +57,16 @@ void mandelbrot(Image3& image) {
 
 			double y0 = ((double)y / (double)h) * 2 - 1;
 
+			double x_val = 0.0;
+
+
+			double y_val = 0.0;
+
+			int iteration = 0;
+
+	
+			int max_iteration = 1000;
+
 
 	int main();
 {
