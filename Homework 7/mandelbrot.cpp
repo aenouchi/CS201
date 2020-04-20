@@ -78,6 +78,14 @@ void mandelbrot(Image3& image) {
 				iteration++;
 			}
 
+			int r, g, b;
+			r = iteration * 15;
+			g = r / 3;
+			b = g / 2;
+
+			image.setPixel(x, y, Color3(r, g, b));
+		}
+
 
 	int main();
 {
