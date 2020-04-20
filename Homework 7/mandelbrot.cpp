@@ -40,7 +40,14 @@ using std::ofstream;
 //    color : = palette[iteration]
 //    plot(Px, Py, color)
 
-int main()
-{
+void mandelbrot(Image3& image) {
 
+	int w = (int)image.w; //width
+	int h = (int)image.h;// height
+
+
+			
+
+	int main();
+{
 }
