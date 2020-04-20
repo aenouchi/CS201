@@ -86,8 +86,20 @@ void mandelbrot(Image3& image) {
 			image.setPixel(x, y, Color3(r, g, b));
 		}
 	}
-
-
-	int main();
-{
 }
+
+
+
+	int main()
+{
+		double scale = 0.2;
+		unsigned width = (unsigned)(5120 * scale);
+		unsigned height = (unsigned)(2098 * scale);
+
+		
+		Image3 image(width, height);
+
+		
+		mandelbrot(image);
+
+	}
