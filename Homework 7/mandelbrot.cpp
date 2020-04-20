@@ -59,13 +59,24 @@ void mandelbrot(Image3& image) {
 
 			double x_val = 0.0;
 
-
 			double y_val = 0.0;
 
-			int iteration = 0;
-
+			int iteration = 0.0;
 	
 			int max_iteration = 1000;
+
+			while (x_val * x_val + y_val * y_val <= 2 * 2 * 2 * 2 && iteration < max_iteration) {
+			
+				double x_temp = (double)x_val * x_val - y_val * y_val + x0;
+
+				double y_temp = (double)2 * x_val * y_val + y0;
+
+				y_val = y_temp;
+
+				x_val = x_temp;
+
+				iteration++;
+			}
 
 
 	int main();
