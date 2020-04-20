@@ -45,14 +45,14 @@ void mandelbrot(Image3& image) {
 	int w = (int)image.w; //width
 	int h = (int)image.h;// height
 
-	for (int i = 0; i < w; i++) 
+	for (int i = 0; i < w; i++)
 	{
-		for (int j = 0; j < h; j++) 
+		for (int j = 0; j < h; j++)
 		{
 
 			int x = i;
 			int y = j;
-			
+
 			double x0 = ((double)x / (double)w) * 3.5 - 2.5;
 
 			double y0 = ((double)y / (double)h) * 2 - 1;
@@ -62,11 +62,11 @@ void mandelbrot(Image3& image) {
 			double y_val = 0.0;
 
 			int iteration = 0.0;
-	
+
 			int max_iteration = 1000;
 
 			while (x_val * x_val + y_val * y_val <= 2 * 2 * 2 * 2 && iteration < max_iteration) {
-			
+
 				double x_temp = (double)x_val * x_val - y_val * y_val + x0;
 
 				double y_temp = (double)2 * x_val * y_val + y0;
@@ -85,6 +85,7 @@ void mandelbrot(Image3& image) {
 
 			image.setPixel(x, y, Color3(r, g, b));
 		}
+	}
 
 
 	int main();
