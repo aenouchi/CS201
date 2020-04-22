@@ -104,4 +104,5 @@ void mandelbrot(Image3& image) {
 
 		cout << image << endl;
 
+
 	}
