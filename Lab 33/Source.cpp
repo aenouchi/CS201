@@ -22,11 +22,11 @@ public:
 	{
 		if (c == 'x' || c == 'X')
 		{
-			x = y;
+			x = d;
 		}
 		else
 		{
-			y = y;
+			y = d;
 		}
 	}
 
@@ -55,8 +55,8 @@ int main()
 {
 		cout << "Setter setting:\n...\n" << endl;
 		sum klass;
-		klass.setter('x', 0);
-		klass.setter('y', 64.83);
+		klass.setter('x', 1986);
+		klass.setter('y', 2017.0915);
 
 		cout << "Getter getting:" << endl;
 		cout << "x-value: " << klass.getter('x') << endl << "y-value: " << klass.getter('y');
