@@ -1,5 +1,5 @@
 /**
-*thermostat.cpp
+*simulator.cpp
 *Homework 8
 *Aaron Nouchi
 *CS 201

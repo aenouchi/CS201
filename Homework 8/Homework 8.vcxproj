@@ -138,8 +138,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="thermostat.cpp" />
-    <ClCompile Include="vacuum-cleaner-world.cpp" />
+    <ClCompile Include="agent.cpp" />
+    <ClCompile Include="environment.cpp" />
+    <ClCompile Include="simulator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="agent.hpp" />
+    <ClInclude Include="environment.hpp" />
+    <ClInclude Include="simulator.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

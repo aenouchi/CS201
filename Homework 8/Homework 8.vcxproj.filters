@@ -15,11 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="thermostat.cpp">
+    <ClCompile Include="agent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vacuum-cleaner-world.cpp">
+    <ClCompile Include="environment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="agent.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="environment.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulator.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
