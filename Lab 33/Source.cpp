@@ -15,37 +15,37 @@ using std::cin;
 using std::to_string;
 
 class sum {
-	int a;
-	double b;
+	int x;
+	double y;
 public:
 	void setter(char c, double d)
 	{
-		if (c == 'a' || c == 'A')
+		if (c == 'x' || c == 'X')
 		{
-			a = b;
+			x = y;
 		}
 		else
 		{
-			b = b;
+			y = y;
 		}
 	}
 
 	double getter(char c)
 	{
-		if (c == 'a' || c == 'A')
+		if (c == 'x' || c == 'X')
 		{
-			return a;
+			return x;
 		}
 		else
 		{
-			return b;
+			return y;
 		}
 	}
 
 	void print()
 	{
-		auto p = to_string(a);
-		auto q = to_string(b);
+		auto p = to_string(x);
+		auto q = to_string(y);
 
 		cout << p << ", " << q << endl;
 	}
@@ -53,5 +53,16 @@ public:
 
 int main()
 {
+		cout << "Setter setting:\n...\n" << endl;
+		sum klass;
+		klass.setter('x', 0);
+		klass.setter('y', 64.83);
 
+		cout << "Getter getting:" << endl;
+		cout << "x-value: " << klass.getter('x') << endl << "y-value: " << klass.getter('y');
+		cout << endl << endl;
+
+		cout << "Print() printing:" << endl;
+		klass.print();
+		cout << endl;
 }
