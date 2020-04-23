@@ -53,7 +53,7 @@ public:
 
 int main()
 {
-		cout << "Setter setting:\n...\n" << endl;
+		cout << "Setter setting:"<< endl;
 		sum klass;
 		klass.setter('x', 1986);
 		klass.setter('y', 2017.0915);
