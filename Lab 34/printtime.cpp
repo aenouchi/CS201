@@ -5,7 +5,7 @@
 // For CS 201 Spring 2018
 // Time of Day Class & Program
 //
-// Modified 11/28/18 for CS 201 Fall 2018
+// Modified 4/23/20 for CS 201 Spring
 // Chris Hartman
 
 #include <iostream>
@@ -18,8 +18,15 @@ using std::cin;
 // Holds a time of day: hours, minutes, seconds. Can print its stored
 // time in a nice format.
 class Time {
-
 public:
+    Time() : _hr(2),
+        _min(07),
+        _sec(46) {}
+
+    Time(int hr, int min, int sec) :
+        _hr{ hr }, _min{ min }, _sec{ sec } { }
+
+
 // ***** Time: constructors *****
 
     // TODO: Put something here!
@@ -28,8 +35,7 @@ public:
 
     void print() const
     {
-        cout << "SOMETHING NEEDS TO GO HERE";  // DUMMY
-        // TODO: Write this!
+        cout << _hr << ":" << _min << ":" << _sec;
     }
 
 // ***** Time: data members *****
