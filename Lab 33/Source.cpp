@@ -7,10 +7,12 @@
 *April 22,2020
 */
 #include <iostream>
+#include <string>
 
 using std::cout;
 using std::endl;
 using std::cin;
+using std::to_string;
 
 
 int main()
