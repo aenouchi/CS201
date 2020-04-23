@@ -11,3 +11,27 @@
 using std::cout;
 using std::endl;
 using std::cin;
+
+#ifndef environment_hpp
+#define environment_hpp	
+
+
+#include "agent.hpp"
+#include "simulator.hpp"
+
+class Environment {
+	class Environment {
+		int temp;
+		bool heater;
+
+	public:
+		Environment();
+		Environment(int t, bool h);
+
+
+		void iteration() const;
+	};
+};
+
+
+#endif 	

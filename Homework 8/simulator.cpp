@@ -11,3 +11,8 @@
 using std::cout;
 using std::endl;
 using std::cin;
+
+#include "simulator.hpp"
+
+Simulator::Simulator()
+{}

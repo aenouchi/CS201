@@ -7,6 +7,8 @@
 *April 22,2020
 */
 #include <iostream>
+#include "agent.hpp" 
+
 
 using std::cout;
 using std::endl;
