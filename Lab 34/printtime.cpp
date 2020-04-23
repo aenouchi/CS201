@@ -9,9 +9,12 @@
 // Chris Hartman
 
 #include <iostream>
+#include <iomanip>
 using std::cout;
 using std::endl;
 using std::cin;
+using std::setfill;
+using std::setw;
 
 
 // Class Time
@@ -19,13 +22,17 @@ using std::cin;
 // time in a nice format.
 class Time {
 public:
-    Time() : _hr(2),
-        _min(07),
-        _sec(46) {}
+    Time() {
+        _hr = 12;
+        _min = 00;
+        _sec = 00;
+    }
 
-    Time(int hr, int min, int sec) :
-        _hr{ hr }, _min{ min }, _sec{ sec } { }
-
+    Time(int hr, int min, int sec) {
+        _hr = hr;
+        _min = min;
+        _sec = sec;
+    }
 
 // ***** Time: constructors *****
 
@@ -33,10 +40,10 @@ public:
 
 // ***** Time: general public member functions *****
 
-    void print() const
-    {
-        cout << _hr << ":" << _min << ":" << _sec;
+    void print() const {
+        cout << std::setfill('0') << std::setw(2) << _hr << ":" << setw(2) << _min << ":" << setw(2) << _sec;
     }
+
 
 // ***** Time: data members *****
 private:
