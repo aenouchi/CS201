@@ -23,9 +23,9 @@ using std::setw;
 class Time {
 public:
     Time() {
-        _hr = 12;
-        _min = 00;
-        _sec = 00;
+        _hr = 2;
+        _min = 28;
+        _sec = 30;
     }
 
     Time(int hr, int min, int sec) {
@@ -65,6 +65,13 @@ int main()
     Time t1;
     cout << "Time #1: [";
     t1.print();
+    cout << "]" << endl;
+    cout << endl;
+
+    // Make a Time object; print it
+    Time t2{9, 39, 23};
+    cout << "Time #2: [";
+    t2.print();
     cout << "]" << endl;
     cout << endl;
 
