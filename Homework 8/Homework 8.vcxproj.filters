@@ -24,9 +24,6 @@
     <ClCompile Include="simulator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vacuum-cleaner-world.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CRUD 2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

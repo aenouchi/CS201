@@ -38,10 +38,6 @@ string CRUD::read(map<string, string> q, string w)
 {
 	return q[w];
 }
-string CRUD::read(map<string, string> q, string w)
-{
-	return q[w];
-}
 void CRUD::read(map<string, string> q)
 {
 	for (pair<string, string> p : q)
@@ -53,7 +49,7 @@ void CRUD::update(map<string, string>& q, string w, string e)//Define update
 {
 	q[w] = e;
 }
-void CRUD::Delete(map<string, string>& q, string w)//Define delete
+void CRUD::Delete(map<string, string>& q, string e)//Define delete
 {
-	q.erase(w);
+	q.erase(e);
 }

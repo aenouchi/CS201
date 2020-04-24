@@ -143,7 +143,6 @@
     <ClCompile Include="CRUD main.cpp" />
     <ClCompile Include="environment.cpp" />
     <ClCompile Include="simulator.cpp" />
-    <ClCompile Include="vacuum-cleaner-world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="agent.hpp" />
