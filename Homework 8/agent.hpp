@@ -7,24 +7,18 @@
 *April 22,2020
 */
 #include <iostream>
+#include "environment.hpp"
+
 #ifndef agent_hpp
 #define agent_hpp	
-#include "simulator.hpp"
-#include "agent.hpp"
 
 class Agent {
-	class Agent {
-
-
-	public:
-		void percieve(Environment e);
-		void think();
-		void act(Environment e);
-	};
-};
+	int temp;
+	int goal;
+	bool hot;
 
 
 
 
 
-#endif 	#endif
+#endif 	
