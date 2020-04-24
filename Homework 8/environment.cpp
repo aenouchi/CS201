@@ -6,7 +6,7 @@
 *Jon Genetti
 *April 22,2020
 */
-#include <iostream>
+
 #include "environment.hpp"
 
 using std::cout;
@@ -20,12 +20,12 @@ Environment::Environment() :
 	temp(0)
 {}
 
-Environment::Environment(int t, bool h) :
-	heater(h),
+Environment::Environment(int t) :
+	heater(false),
 	temp(t)
 {}
 
-void Environment::iteration() const
+void Environment::iteration()
 {
 	if (heater)
 	{
@@ -35,4 +35,19 @@ void Environment::iteration() const
 	{
 		temp--;
 	}
+}
+
+int Environment::getTemp()
+{
+	return temp;
+}
+
+bool Environment::getHeater()
+{
+	return heater;
+}
+
+void Environment::setHeater(bool b)
+{
+	heater = b;
 }

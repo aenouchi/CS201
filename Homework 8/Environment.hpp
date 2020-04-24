@@ -22,6 +22,7 @@ class Environment {// Prototype for environment function
 
 	public:
 		Environment();
+		Environment(int t);
 		Environment(int t, bool h);
 
 

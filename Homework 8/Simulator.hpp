@@ -20,7 +20,6 @@ using std::cin;
 
 
 
-class Simulator {
 	class Simulator {
 
 
@@ -31,7 +30,6 @@ class Simulator {
 		void askOwner();
 		void run();
 	};
-};
 
 
 #endif	#endif
