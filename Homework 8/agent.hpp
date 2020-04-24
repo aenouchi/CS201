@@ -17,7 +17,17 @@ class Agent {
 	int goal;
 	bool hot;
 
+public:
+	Agent();
+	Agent(int t, int g);
 
+	void setGoal(int g);
+	int getGoal();
+
+	void percieve(Environment e);
+	void think();
+	void act(Environment& e);
+};
 
 
 
