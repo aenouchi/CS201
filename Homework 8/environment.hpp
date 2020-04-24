@@ -12,14 +12,14 @@ using std::cout;
 using std::endl;
 using std::cin;
 
-#ifndef environment_hpp
-#define environment_hpp	
+#ifndef Environment_hpp
+#define Environment_hpp	
 
 
-#include "agent.hpp"
-#include "simulator.hpp"
+#ifndef Environment_hpp
+#define Environment_hpp
 
-class Environment {
+class Environment {// Prototype for environment function
 	class Environment {
 		int temp;
 		bool heater;
@@ -29,9 +29,14 @@ class Environment {
 		Environment(int t, bool h);
 
 
-		void iteration() const;
+	
+		void iteration();
+
+		int getTemp();
+		bool getHeater();
+		void setHeater(bool b);
 	};
-};
+	};
 
-
+#endif 	
 #endif 	

@@ -7,12 +7,12 @@
 *April 22,2020
 */
 #include <iostream>
-#include "environment.hpp"
+#include "Environment.hpp"
 
-#ifndef agent_hpp
-#define agent_hpp	
+#ifndef Agent_hpp
+#define Agent_hpp	
 
-class Agent {
+class Agent { //Prototypes class agent
 	int temp;
 	int goal;
 	bool hot;
@@ -26,7 +26,7 @@ public:
 
 	void percieve(Environment e);
 	void think();
-	void act(Environment& e);
+	void act(Environment &e);
 };
 
 
