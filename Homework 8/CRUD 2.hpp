@@ -20,6 +20,18 @@ using std::string;
 using std::map;
 using std::pair;
 
+namespace CRUD //prototypes CRUD
+{
+	void create(map<string, string>& q, string w, string e);
 
+	string read(pair<string, string> p);
+	string read(pair<string, string> p, int x);
+	string read(map<string, string> q, string w);
+	void read(map<string, string> q);
 
-#endif
+	void update(map<string, string>& q, string w, string e);
+
+	void Delete(map<string, string>& q, string w);
+}
+
+#endif 
