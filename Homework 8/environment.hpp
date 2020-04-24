@@ -16,16 +16,13 @@ using std::cin;
 #define Environment_hpp	
 
 
-#ifndef Environment_hpp
-#define Environment_hpp
-
 class Environment {// Prototype for environment function
-	class Environment {
 		int temp;
 		bool heater;
 
 	public:
 		Environment();
+		Environment(int t);
 		Environment(int t, bool h);
 
 
@@ -36,7 +33,5 @@ class Environment {// Prototype for environment function
 		bool getHeater();
 		void setHeater(bool b);
 	};
-	};
 
-#endif 	
 #endif 	
