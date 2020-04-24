@@ -9,6 +9,8 @@
 #include<iostream>
 #include <string>
 #include <map>
+#include "CRUD 2.hpp"
+
 
 using std::cout;
 using std::endl;
@@ -16,6 +18,10 @@ using std::cin;
 using std::string;
 using std::map;
 using std::pair;
+using CRUD::create;
+using CRUD::Delete;
+using CRUD::read;
+using CRUD::update;
 
 int main()
 {
@@ -43,7 +49,7 @@ int main()
 
 	
 	cout << "Testing Update:" << endl;//update test
-	update(q, "Derick", "Minecraft");
+	update(q, "Egg", "Robotnik");
 	read(q);
 	cout << endl;
 
