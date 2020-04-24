@@ -15,21 +15,21 @@ using std::endl;
 using std::cin;
 
 #ifndef Simulator_h
-#define Simulator_h	#define Simulator_h
+#define Simulator_h	
 
 
 
-
-	class Simulator {
-
+	class Simulator { //Protoyping class simulator
+		Environment room;
+		Agent powers;
 
 	public:
 		Simulator();
-
+		Simulator(int t, int g);
 
 		void askOwner();
 		void run();
 	};
 
 
-#endif	#endif
+#endif	

@@ -13,7 +13,7 @@ using std::cout;
 using std::endl;
 using std::cin;
 
-
+//Defines the class 'Environment'
 
 Environment::Environment() :
 	heater(false),
