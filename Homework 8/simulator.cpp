@@ -15,7 +15,7 @@ using std::endl;
 using std::cin;
 using std::string;
 
-Simulator::Simulator() :
+Simulator::Simulator() : //Simulator defined
 room(),
 powers()
 {}
@@ -25,7 +25,7 @@ Simulator::Simulator(int t, int g) :
 	powers(t, g)
 {}
 
-void Simulator::askOwner()
+void Simulator::ask()//User input
 {
 	string input1;
 	int input2;

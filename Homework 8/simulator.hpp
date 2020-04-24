@@ -27,7 +27,7 @@ using std::cin;
 		Simulator();
 		Simulator(int t, int g);
 
-		void askOwner();
+		void ask();
 		void run();
 	};
 
