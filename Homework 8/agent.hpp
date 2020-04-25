@@ -30,5 +30,24 @@
 //};
 //
 
+class Agent
+{
+	bool clean; //
+	bool toDo; //Determines if room needs to be clean
+	
+	bool move;//
+	bool direction; //Determines where to move
+
+public:
+	int position;
+
+	Agent();
+	Agent(int p);
+
+	void look(Environment e);
+	void think();
+	void act(Environment& e);
+};
+
 
 #endif 	
