@@ -19,17 +19,17 @@ using std::cin;
 
 
 
-	class Simulator { //Protoyping class simulator
-		Environment room;
-		Agent powers;
+	//class Simulator { //Protoyping class simulator //For thermostat
+	//	Environment room;
+	//	Agent powers;
 
-	public:
-		Simulator();
-		Simulator(int t, int g);
+	//public:
+	//	Simulator();
+	//	Simulator(int t, int g);
 
-		void ask();
-		void run();
-	};
+	//	void ask();
+	//	void run();
+	//};
 
 
 #endif	

@@ -49,7 +49,7 @@ int main()
 
 	
 	cout << "Testing Update:" << endl;//update test
-	update(q, "Egg", "Robotnik");
+	update(q, "Egg", "Robotnikt");
 	read(q);
 	cout << endl;
 

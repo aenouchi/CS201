@@ -11,24 +11,24 @@
 
 #ifndef Agent_hpp
 #define Agent_hpp	
-
-class Agent { //Prototypes class agent
-	int temp;
-	int goal;
-	bool hot;
-
-public:
-	Agent();
-	Agent(int t, int g);
-
-	void setGoal(int g);
-	int getGoal();
-
-	void percieve(Environment e);
-	void think();
-	void act(Environment &e);
-};
-
+//
+//class Agent { //Prototypes class agent //For thermostat
+//	int temp;
+//	int goal;
+//	bool hot;
+//
+//public:
+//	Agent();
+//	Agent(int t, int g);
+//
+//	void setGoal(int g);
+//	int getGoal();
+//
+//	void percieve(Environment e);
+//	void think();
+//	void act(Environment &e);
+//};
+//
 
 
 #endif 	
