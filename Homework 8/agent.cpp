@@ -72,3 +72,43 @@ using std::cin;
 //		e.setHeater(false);
 //	}
 //}
+Agent::Agent() : //Defines agent
+	toDo(false),
+	clean(true),
+	position(0),
+	move(false),
+	direction(true)
+{}
+
+Agent::Agent(int p) :
+	toDo(false),
+	clean(true),
+	position(p),
+	move(false),
+	direction(true)
+{}
+
+void Agent::look(Environment e)
+{
+	clean = e.getClean();
+}
+
+void Agent::think()
+{
+	if (!clean)
+	{
+		toDo = true;
+	}
+}
+
+void Agent::act(Environment& e)
+{
+	if (toDo)
+	{
+		e.setClean(true);
+	}
+	else
+	{
+		move = true;
+	}
+}

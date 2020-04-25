@@ -142,13 +142,11 @@
     <ClCompile Include="environment.cpp" />
     <ClCompile Include="home.cpp" />
     <ClCompile Include="home.hpp" />
-    <ClCompile Include="simulator.cpp" />
     <ClCompile Include="vacuum-cleaner-world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="agent.hpp" />
     <ClInclude Include="environment.hpp" />
-    <ClInclude Include="simulator.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

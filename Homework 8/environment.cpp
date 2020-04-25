@@ -51,3 +51,20 @@ using std::cin;
 //{
 //	heater = b;
 //}
+Environment::Environment() :
+	clean(true)
+{}
+
+Environment::Environment(bool c) :
+	clean(c)
+{}
+
+bool Environment::getClean()
+{
+	return clean;
+}
+
+void Environment::setClean(bool b)
+{
+	clean = b;
+}
