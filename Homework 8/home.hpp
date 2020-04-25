@@ -22,13 +22,16 @@ using std::cin;
 using std::vector;
 using std::mt19937;
 
-class Environment;
-class Agent;
+class Home
+{
+	vector<Environment> rooms;
+	Agent vacuum;
 
-void clearConsole();
-void waitForContinue();
-void printState(Environment& env, Agent& agt);
-bool rollBool(mt19937* e1);
+public:
+	Home();
+	Home(int r);
 
+	void turn();
+};
 #endif
 
