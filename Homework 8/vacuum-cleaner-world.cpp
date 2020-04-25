@@ -7,10 +7,19 @@
 *April 22,2020
 */
 #include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <random>
+#include <stdlib.h>
+#include <vector>
+#include "Agent.Hpp" 
+#include "Home.hpp"
+#include "Environment.hpp"
 
 using std::cout;
 using std::endl;
 using std::cin;
+using std::vector;
 
 int main()
 {
