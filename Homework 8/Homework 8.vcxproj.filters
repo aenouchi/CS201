@@ -27,6 +27,12 @@
     <ClCompile Include="vacuum-cleaner-world.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="home.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="home.hpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="agent.hpp">

@@ -6,18 +6,18 @@
 *Jon Genetti
 *April 22,2020
 */
-//#include <iostream>//For thermostat
-//
-//using std::cout;
-//using std::endl;
-//using std::cin;
-//
-//#ifndef Environment_hpp
-//#define Environment_hpp	
-//
+#include <iostream>
+
+using std::cout;
+using std::endl;
+using std::cin;
+
+#ifndef Environment_hpp
+#define Environment_hpp	
+
 //
 //class Environment {// Prototype for environment function
-//		int temp;
+//		int temp;//For thermostat
 //		bool heater;
 //
 //	public:
@@ -33,5 +33,18 @@
 //		bool getHeater();
 //		void setHeater(bool b);
 //	};
+
+
+class Environment //environment prototype
+{
+	bool clean;
+
+public:
+	Environment();
+	Environment(bool c);
+
+	bool getClean();
+	void setClean(bool b);
+};
 
 #endif 	
